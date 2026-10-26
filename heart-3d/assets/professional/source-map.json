@@ -1,0 +1,4724 @@
+{
+  "dataset": "BodyParts3D / Anatomography",
+  "version": "4.3",
+  "retrievedUtc": "2026-10-26T07:30:25.077675+00:00",
+  "sourceStatus": "Downloaded directly from official lifesciencedb.jp public endpoints; mirror LFS pointers used only for checksum cross-check.",
+  "manifestUrl": "https://lifesciencedb.jp/bp3d/get-info.cgi?version=4.3&cmd=concept-objfiles-list",
+  "mappingUrl": "https://lifesciencedb.jp/bp3d/get-info.cgi",
+  "mappingPostBody": {
+    "cmd": "upload-all-list",
+    "load": "1",
+    "md_abbr": "bp3d",
+    "title": "obj2FMA",
+    "tree": "isa",
+    "version": "4.3"
+  },
+  "downloadPostFields": [
+    "ids: JSON array of FJ IDs",
+    "rep_id: JSON array of BP IDs",
+    "type=art_file",
+    "all_downloads=1"
+  ],
+  "unit": "mm",
+  "medicalReview": "pending",
+  "license": {
+    "officialArchiveLicense": "CC BY 4.0 (updated 2025-02-27)",
+    "officialArchiveLicenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+    "mirrorDeclaredMeshLicense": "CC BY-SA 2.1 Japan",
+    "redistributionChoice": "Preserve the older CC BY-SA 2.1 Japan grant and full attribution conservatively for this 4.3 export; retain the current archive grant as a separate evidence record.",
+    "attribution": "BodyParts3D, © The Database Center for Life Science (DBCLS).",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/"
+  },
+  "limitations": [
+    "The existing eleven structure groups have the same source element geometry counts in 4.0 and this 4.3 export; this export must not be advertised as higher-resolution solely from its version.",
+    "Ventricular wall remains a combined mesh. No separately modeled atrial/ventricular septum, chordae tendineae, atrial cavity or conduction system was found in the selected manifest.",
+    "Surface cavities are space representations, not myocardium. Valve models are static; motion and hemodynamics are not validated.",
+    "Reference adult male anatomy; medical expert review of this selection and Chinese terminology remains pending."
+  ],
+  "structures": [
+    {
+      "id": "right-atrium",
+      "members": [
+        "FJ2439"
+      ],
+      "englishNames": [
+        "Wall of right atrium"
+      ],
+      "chineseName": "右心房壁",
+      "kind": "wall",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA9457"
+      ],
+      "usableMeshes": 1,
+      "triangles": 17784
+    },
+    {
+      "id": "left-atrium",
+      "members": [
+        "FJ2438"
+      ],
+      "englishNames": [
+        "Wall of left atrium"
+      ],
+      "chineseName": "左心房壁",
+      "kind": "wall",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA9531"
+      ],
+      "usableMeshes": 1,
+      "triangles": 7544
+    },
+    {
+      "id": "ventricular-wall",
+      "members": [
+        "FJ2428"
+      ],
+      "englishNames": [
+        "Wall of ventricle"
+      ],
+      "chineseName": "心室壁（左右合并）",
+      "kind": "wall",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA13884"
+      ],
+      "usableMeshes": 1,
+      "triangles": 37442
+    },
+    {
+      "id": "right-ventricle",
+      "members": [
+        "FJ2423"
+      ],
+      "englishNames": [
+        "Cavity of right ventricle"
+      ],
+      "chineseName": "右心室腔",
+      "kind": "cavity",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA9291"
+      ],
+      "usableMeshes": 1,
+      "triangles": 1918
+    },
+    {
+      "id": "left-ventricle",
+      "members": [
+        "FJ2422"
+      ],
+      "englishNames": [
+        "Cavity of left ventricle"
+      ],
+      "chineseName": "左心室腔",
+      "kind": "cavity",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA9466"
+      ],
+      "usableMeshes": 1,
+      "triangles": 1722
+    },
+    {
+      "id": "ascending-aorta",
+      "members": [
+        "FJ3413"
+      ],
+      "englishNames": [
+        "Ascending aorta"
+      ],
+      "chineseName": "升主动脉",
+      "kind": "artery",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA3736"
+      ],
+      "usableMeshes": 1,
+      "triangles": 396
+    },
+    {
+      "id": "aortic-arch",
+      "members": [
+        "FJ3411"
+      ],
+      "englishNames": [
+        "Arch of aorta"
+      ],
+      "chineseName": "主动脉弓",
+      "kind": "artery",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA3768"
+      ],
+      "usableMeshes": 1,
+      "triangles": 670
+    },
+    {
+      "id": "pulmonary-trunk",
+      "members": [
+        "FJ2966"
+      ],
+      "englishNames": [
+        "Pulmonary trunk"
+      ],
+      "chineseName": "肺动脉干",
+      "kind": "artery",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA8612"
+      ],
+      "usableMeshes": 1,
+      "triangles": 1302
+    },
+    {
+      "id": "superior-vena-cava",
+      "members": [
+        "FJ3645"
+      ],
+      "englishNames": [
+        "Superior vena cava"
+      ],
+      "chineseName": "上腔静脉",
+      "kind": "vein",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA4720"
+      ],
+      "usableMeshes": 1,
+      "triangles": 598
+    },
+    {
+      "id": "left-coronary",
+      "members": [
+        "FJ2631",
+        "FJ2632",
+        "FJ2633",
+        "FJ2634",
+        "FJ2635",
+        "FJ2636",
+        "FJ2637",
+        "FJ2638",
+        "FJ2639",
+        "FJ2640",
+        "FJ2641",
+        "FJ2642",
+        "FJ2643",
+        "FJ2644",
+        "FJ2645",
+        "FJ2646",
+        "FJ2647",
+        "FJ2648",
+        "FJ2649",
+        "FJ2650",
+        "FJ2651",
+        "FJ2653",
+        "FJ2654",
+        "FJ2737"
+      ],
+      "englishNames": [
+        "Trunk of anterior interventricular branch of left coronary artery",
+        "First right anterior branch of anterior interventricular branch of left coronary artery",
+        "Diagonal branch of anterior descending branch of left coronary artery",
+        "Third right anterior branch of anterior interventricular branch of left coronary artery",
+        "Conus branch of anterior interventricular branch of left coronary artery",
+        "Second right anterior branch of anterior interventricular branch of left coronary artery",
+        "Circumflex branch of left coronary artery",
+        "Trunk of left coronary artery"
+      ],
+      "chineseName": "左冠状动脉及所选分支",
+      "kind": "coronary",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA74912",
+        "FMA3872",
+        "FMA3860",
+        "FMA3876",
+        "FMA3868",
+        "FMA3874",
+        "FMA3895",
+        "FMA3855"
+      ],
+      "usableMeshes": 24,
+      "triangles": 12358,
+      "omittedPreviousVersionElements": [
+        "FJ2652"
+      ],
+      "versionDifferenceNote": "These prior 4.0 elements are not available in the official 4.3 selection. Preserve the old model for comparison; do not claim identical coronary coverage."
+    },
+    {
+      "id": "right-coronary",
+      "members": [
+        "FJ2667",
+        "FJ2668",
+        "FJ2670",
+        "FJ2671",
+        "FJ2672",
+        "FJ2673",
+        "FJ2674",
+        "FJ2675",
+        "FJ2676",
+        "FJ2677",
+        "FJ2692",
+        "FJ2695",
+        "FJ2696",
+        "FJ2697",
+        "FJ2698",
+        "FJ2699",
+        "FJ2700",
+        "FJ2714",
+        "FJ2715",
+        "FJ2716",
+        "FJ2717",
+        "FJ2718",
+        "FJ2719",
+        "FJ2720",
+        "FJ2721",
+        "FJ2722",
+        "FJ2723"
+      ],
+      "englishNames": [
+        "Marginal branch of right coronary artery",
+        "Conus branch of right coronary artery",
+        "First anterior ventricular branch of right coronary artery",
+        "Posterior interventricular branch of right coronary artery",
+        "First posterior ventricular branch of right coronary artery",
+        "Trunk of right coronary artery"
+      ],
+      "chineseName": "右冠状动脉及所选分支",
+      "kind": "coronary",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA3818",
+        "FMA3807",
+        "FMA3815",
+        "FMA3840",
+        "FMA3837",
+        "FMA3802"
+      ],
+      "usableMeshes": 27,
+      "triangles": 13492,
+      "omittedPreviousVersionElements": [
+        "FJ2693",
+        "FJ2694"
+      ],
+      "versionDifferenceNote": "These prior 4.0 elements are not available in the official 4.3 selection. Preserve the old model for comparison; do not claim identical coronary coverage."
+    },
+    {
+      "id": "pulmonary-valve-left-anterior-cusp",
+      "members": [
+        "FJ2417"
+      ],
+      "englishNames": [
+        "Left anterior cusp of pulmonary valve"
+      ],
+      "chineseName": "肺动脉瓣左前瓣",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7247"
+      ],
+      "usableMeshes": 1,
+      "triangles": 1272
+    },
+    {
+      "id": "left-ventricular-anterolateral-papillary-head",
+      "members": [
+        "FJ2418"
+      ],
+      "englishNames": [
+        "Anterolateral head of lateral papillary muscle of left ventricle"
+      ],
+      "chineseName": "左心室外侧乳头肌前外侧头",
+      "kind": "papillary",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7265"
+      ],
+      "usableMeshes": 1,
+      "triangles": 816
+    },
+    {
+      "id": "right-ventricular-anterior-papillary-muscle",
+      "members": [
+        "FJ2419"
+      ],
+      "englishNames": [
+        "Anterior papillary muscle of right ventricle"
+      ],
+      "chineseName": "右心室前乳头肌",
+      "kind": "papillary",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7260"
+      ],
+      "usableMeshes": 1,
+      "triangles": 882
+    },
+    {
+      "id": "mitral-valve-anterior-leaflet",
+      "members": [
+        "FJ2420"
+      ],
+      "englishNames": [
+        "Anterior leaflet of mitral valve"
+      ],
+      "chineseName": "二尖瓣前叶",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7242"
+      ],
+      "usableMeshes": 1,
+      "triangles": 7558
+    },
+    {
+      "id": "tricuspid-valve-anterior-leaflet",
+      "members": [
+        "FJ2421"
+      ],
+      "englishNames": [
+        "Anterior leaflet of tricuspid valve"
+      ],
+      "chineseName": "三尖瓣前叶",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7238"
+      ],
+      "usableMeshes": 1,
+      "triangles": 8160
+    },
+    {
+      "id": "aortic-valve-left-posterior-cusp",
+      "members": [
+        "FJ2426"
+      ],
+      "englishNames": [
+        "Left posterior cusp of aortic valve"
+      ],
+      "chineseName": "主动脉瓣左后瓣",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7254"
+      ],
+      "usableMeshes": 1,
+      "triangles": 914
+    },
+    {
+      "id": "pulmonary-valve-posterior-cusp",
+      "members": [
+        "FJ2427"
+      ],
+      "englishNames": [
+        "Posterior cusp of pulmonary valve"
+      ],
+      "chineseName": "肺动脉瓣后瓣",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7250"
+      ],
+      "usableMeshes": 1,
+      "triangles": 996
+    },
+    {
+      "id": "left-ventricular-posterior-papillary-muscle",
+      "members": [
+        "FJ2429"
+      ],
+      "englishNames": [
+        "Posterior papillary muscle of left ventricle"
+      ],
+      "chineseName": "左心室后乳头肌",
+      "kind": "papillary",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7266"
+      ],
+      "usableMeshes": 1,
+      "triangles": 780
+    },
+    {
+      "id": "right-ventricular-posterior-papillary-muscle",
+      "members": [
+        "FJ2430"
+      ],
+      "englishNames": [
+        "Posterior papillary muscle of right ventricle"
+      ],
+      "chineseName": "右心室后乳头肌",
+      "kind": "papillary",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7261"
+      ],
+      "usableMeshes": 1,
+      "triangles": 692
+    },
+    {
+      "id": "aortic-valve-right-posterior-cusp",
+      "members": [
+        "FJ2431"
+      ],
+      "englishNames": [
+        "Right posterior cusp of aortic valve"
+      ],
+      "chineseName": "主动脉瓣右后瓣",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7252"
+      ],
+      "usableMeshes": 1,
+      "triangles": 316
+    },
+    {
+      "id": "mitral-valve-posterior-leaflet",
+      "members": [
+        "FJ2432"
+      ],
+      "englishNames": [
+        "Posterior leaflet of mitral valve"
+      ],
+      "chineseName": "二尖瓣后叶",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7243"
+      ],
+      "usableMeshes": 1,
+      "triangles": 3820
+    },
+    {
+      "id": "tricuspid-valve-posterior-leaflet",
+      "members": [
+        "FJ2433"
+      ],
+      "englishNames": [
+        "Posterior leaflet of tricuspid valve"
+      ],
+      "chineseName": "三尖瓣后叶",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7239"
+      ],
+      "usableMeshes": 1,
+      "triangles": 4926
+    },
+    {
+      "id": "pulmonary-valve-right-anterior-cusp",
+      "members": [
+        "FJ2434"
+      ],
+      "englishNames": [
+        "Right anterior cusp of pulmonary valve"
+      ],
+      "chineseName": "肺动脉瓣右前瓣",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7249"
+      ],
+      "usableMeshes": 1,
+      "triangles": 1370
+    },
+    {
+      "id": "aortic-valve-anterior-cusp",
+      "members": [
+        "FJ2435"
+      ],
+      "englishNames": [
+        "Anterior cusp of aortic valve"
+      ],
+      "chineseName": "主动脉瓣前瓣",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7253"
+      ],
+      "usableMeshes": 1,
+      "triangles": 920
+    },
+    {
+      "id": "tricuspid-valve-septal-leaflet",
+      "members": [
+        "FJ2436"
+      ],
+      "englishNames": [
+        "Septal leaflet of tricuspid valve"
+      ],
+      "chineseName": "三尖瓣隔叶",
+      "kind": "valve",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7240"
+      ],
+      "usableMeshes": 1,
+      "triangles": 4526
+    },
+    {
+      "id": "right-ventricular-septal-papillary-muscle",
+      "members": [
+        "FJ2437"
+      ],
+      "englishNames": [
+        "Septal papillary muscle of right ventricle"
+      ],
+      "chineseName": "右心室隔乳头肌",
+      "kind": "papillary",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA7262"
+      ],
+      "usableMeshes": 1,
+      "triangles": 844
+    },
+    {
+      "id": "left-superior-pulmonary-vein",
+      "members": [
+        "FJ2925",
+        "FJ2933"
+      ],
+      "englishNames": [
+        "Trunk of left superior pulmonary vein"
+      ],
+      "chineseName": "左上肺静脉主干",
+      "kind": "vein",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA50305"
+      ],
+      "usableMeshes": 2,
+      "triangles": 886
+    },
+    {
+      "id": "left-inferior-pulmonary-vein",
+      "members": [
+        "FJ2944",
+        "FJ2950",
+        "FJ2955"
+      ],
+      "englishNames": [
+        "Trunk of left inferior pulmonary vein"
+      ],
+      "chineseName": "左下肺静脉主干",
+      "kind": "vein",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA50306"
+      ],
+      "usableMeshes": 3,
+      "triangles": 1192
+    },
+    {
+      "id": "right-superior-pulmonary-vein",
+      "members": [
+        "FJ3020"
+      ],
+      "englishNames": [
+        "Trunk of right superior pulmonary vein"
+      ],
+      "chineseName": "右上肺静脉主干",
+      "kind": "vein",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA50302"
+      ],
+      "usableMeshes": 1,
+      "triangles": 324
+    },
+    {
+      "id": "right-inferior-pulmonary-vein",
+      "members": [
+        "FJ3040"
+      ],
+      "englishNames": [
+        "Trunk of right inferior pulmonary vein"
+      ],
+      "chineseName": "右下肺静脉主干",
+      "kind": "vein",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA50303"
+      ],
+      "usableMeshes": 1,
+      "triangles": 196
+    },
+    {
+      "id": "inferior-vena-cava-upper-source",
+      "members": [
+        "FJ3441"
+      ],
+      "englishNames": [
+        "Inferior vena cava"
+      ],
+      "chineseName": "下腔静脉上段（需截短源网格）",
+      "kind": "vein",
+      "chineseTerminologyReview": "pending; preserve exact source English names alongside Chinese labels",
+      "fmaIds": [
+        "FMA10951"
+      ],
+      "usableMeshes": 1,
+      "triangles": 1410,
+      "displayConstraint": "Use only the superior segment adjacent to heart; crop source z>=1150mm and identify the artificial truncation. The uncut source includes abdominal vessel and must not determine framing."
+    }
+  ],
+  "files": [
+    {
+      "fj": "FJ2417",
+      "available": true,
+      "path": "source-obj/FJ2417.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Left anterior cusp of pulmonary valve",
+      "bp": "BP22537",
+      "fma": "FMA7247",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(23.140200,-159.581000,1244.900000)-(40.921500,-139.537000,1261.450000)",
+      "boundsMm": {
+        "min": [
+          23.1402,
+          -159.581,
+          1244.9
+        ],
+        "max": [
+          40.9215,
+          -139.537,
+          1261.45
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2417_BP22537_FMA7247_Left anterior cusp of pulmonary valve.obj",
+      "sha256": "0c81208cb5e2194b2f78d940ec1980ce4d30e4d1101e742db0b0c391d25a9643",
+      "geometrySha256": "ec44622a79e11a564cc60421243b6d9807a06097d881d86fc8d4135124acdd19",
+      "downloadBytes": 78303,
+      "usableMeshes": 1,
+      "vertices": 708,
+      "faces": 1272,
+      "triangles": 1272,
+      "mirror": {
+        "path": "meshes/FJ2417_BP22537_FMA7247_Left anterior cusp of pulmonary valve.obj",
+        "lfsSha256": "0c81208cb5e2194b2f78d940ec1980ce4d30e4d1101e742db0b0c391d25a9643"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2418",
+      "available": true,
+      "path": "source-obj/FJ2418.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Anterolateral head of lateral papillary muscle of left ventricle",
+      "bp": "BP21732",
+      "fma": "FMA7265",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(31.544700,-160.032000,1191.810100)-(56.589200,-124.512000,1224.650000)",
+      "boundsMm": {
+        "min": [
+          31.5447,
+          -160.032,
+          1191.81
+        ],
+        "max": [
+          56.5892,
+          -124.512,
+          1224.65
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2418_BP21732_FMA7265_Anterolateral head of lateral papillary muscle of left ventricle.obj",
+      "sha256": "eeb55696ff4edbdf2ac6c978e1ceebe91ff556639c4a667ff906569ef375dcfe",
+      "geometrySha256": "28022954501535372b0e6cbdd4ec755af68a3c8670079e995032b2737d19d0eb",
+      "downloadBytes": 54414,
+      "usableMeshes": 1,
+      "vertices": 532,
+      "faces": 816,
+      "triangles": 816,
+      "mirror": {
+        "path": "meshes/FJ2418_BP21732_FMA7265_Anterolateral head of lateral papillary muscle of left ventricle.obj",
+        "lfsSha256": "eeb55696ff4edbdf2ac6c978e1ceebe91ff556639c4a667ff906569ef375dcfe"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2419",
+      "available": true,
+      "path": "source-obj/FJ2419.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Anterior papillary muscle of right ventricle",
+      "bp": "BP22413",
+      "fma": "FMA7260",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(12.058300,-172.710000,1179.800100)-(47.142400,-151.131000,1209.050100)",
+      "boundsMm": {
+        "min": [
+          12.0583,
+          -172.71,
+          1179.8
+        ],
+        "max": [
+          47.1424,
+          -151.131,
+          1209.05
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2419_BP22413_FMA7260_Anterior papillary muscle of right ventricle.obj",
+      "sha256": "25bc8c4fb742955f31bb4c7a3281d194c2c55f8fe3cd5e9b179ac4c2cf788ffc",
+      "geometrySha256": "302a8ab8da1f26d1d2be90acd4110589c73d0cfe8644bbcfaae31a427633645a",
+      "downloadBytes": 59214,
+      "usableMeshes": 1,
+      "vertices": 580,
+      "faces": 882,
+      "triangles": 882,
+      "mirror": {
+        "path": "meshes/FJ2419_BP22413_FMA7260_Anterior papillary muscle of right ventricle.obj",
+        "lfsSha256": "25bc8c4fb742955f31bb4c7a3281d194c2c55f8fe3cd5e9b179ac4c2cf788ffc"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2420",
+      "available": true,
+      "path": "source-obj/FJ2420.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Anterior leaflet of mitral valve",
+      "bp": "BP22549",
+      "fma": "FMA7242",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(11.721700,-141.625000,1204.460000)-(45.887900,-93.102200,1235.920000)",
+      "boundsMm": {
+        "min": [
+          11.7217,
+          -141.625,
+          1204.46
+        ],
+        "max": [
+          45.8879,
+          -93.1022,
+          1235.92
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2420_BP22549_FMA7242_Anterior leaflet of mitral valve.obj",
+      "sha256": "5cbe2d2d949ba7463f353ba7755131a0446d36a85573cb066f22e98ad2413613",
+      "geometrySha256": "f4aba83e1074a7619115300ed3421cdd9c56602fa370798defe62319141e7176",
+      "downloadBytes": 494939,
+      "usableMeshes": 1,
+      "vertices": 4052,
+      "faces": 7558,
+      "triangles": 7558,
+      "mirror": {
+        "path": "meshes/FJ2420_BP22549_FMA7242_Anterior leaflet of mitral valve.obj",
+        "lfsSha256": "5cbe2d2d949ba7463f353ba7755131a0446d36a85573cb066f22e98ad2413613"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2421",
+      "available": true,
+      "path": "source-obj/FJ2421.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Anterior leaflet of tricuspid valve",
+      "bp": "BP22919",
+      "fma": "FMA7238",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-21.077200,-156.313000,1198.110000)-(23.204700,-129.198000,1236.210000)",
+      "boundsMm": {
+        "min": [
+          -21.0772,
+          -156.313,
+          1198.11
+        ],
+        "max": [
+          23.2047,
+          -129.198,
+          1236.21
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2421_BP22919_FMA7238_Anterior leaflet of tricuspid valve.obj",
+      "sha256": "c0eb9cf8b8b6497c276e4f0b98db23f1298a36c709d1c9e5369438b2462cf23b",
+      "geometrySha256": "5115dfb0198571286fe934850557b971293de0d443733842de817efeec943d51",
+      "downloadBytes": 532407,
+      "usableMeshes": 1,
+      "vertices": 4282,
+      "faces": 8160,
+      "triangles": 8160,
+      "mirror": {
+        "path": "meshes/FJ2421_BP22919_FMA7238_Anterior leaflet of tricuspid valve.obj",
+        "lfsSha256": "c0eb9cf8b8b6497c276e4f0b98db23f1298a36c709d1c9e5369438b2462cf23b"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2422",
+      "available": true,
+      "path": "source-obj/FJ2422.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Cavity of left ventricle",
+      "bp": "BP22494",
+      "fma": "FMA9466",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(6.467500,-158.522000,1184.070000)-(70.246300,-86.401600,1251.550100)",
+      "boundsMm": {
+        "min": [
+          6.46745,
+          -158.522,
+          1184.07
+        ],
+        "max": [
+          70.2463,
+          -86.4016,
+          1251.55
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2422_BP22494_FMA9466_Cavity of left ventricle.obj",
+      "sha256": "8c2835fee3fa28edbd202cb4ba1c1355db1598dfe2a76c92ebb15b0cc193339f",
+      "geometrySha256": "71f45be7cc641f10ae1ae0e387d0f79ce8c09e08fa1da22470c7f4af1e4b9136",
+      "downloadBytes": 101810,
+      "usableMeshes": 1,
+      "vertices": 879,
+      "faces": 1722,
+      "triangles": 1722,
+      "mirror": {
+        "path": "meshes/FJ2422_BP22494_FMA9466_Cavity of left ventricle.obj",
+        "lfsSha256": "8c2835fee3fa28edbd202cb4ba1c1355db1598dfe2a76c92ebb15b0cc193339f"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 879,
+        "triangles": 1722
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2423",
+      "available": true,
+      "path": "source-obj/FJ2423.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Cavity of right ventricle",
+      "bp": "BP24005",
+      "fma": "FMA9291",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-18.845800,-173.418000,1179.480000)-(52.663400,-115.195000,1260.030000)",
+      "boundsMm": {
+        "min": [
+          -18.8458,
+          -173.418,
+          1179.48
+        ],
+        "max": [
+          52.6634,
+          -115.195,
+          1260.03
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2423_BP24005_FMA9291_Cavity of right ventricle.obj",
+      "sha256": "2ed3fc8bb0f6ae1b96208e210499b15c3edbf737a9cb6d6c7d393098b9949801",
+      "geometrySha256": "f39ec7c9851d31369a5c7e40fd5ebfa86fe4a2e3e4e1a28827315dc73789070f",
+      "downloadBytes": 113260,
+      "usableMeshes": 1,
+      "vertices": 973,
+      "faces": 1918,
+      "triangles": 1918,
+      "mirror": {
+        "path": "meshes/FJ2423_BP24005_FMA9291_Cavity of right ventricle.obj",
+        "lfsSha256": "2ed3fc8bb0f6ae1b96208e210499b15c3edbf737a9cb6d6c7d393098b9949801"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 973,
+        "triangles": 1918
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2426",
+      "available": true,
+      "path": "source-obj/FJ2426.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Left posterior cusp of aortic valve",
+      "bp": "BP22547",
+      "fma": "FMA7254",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(16.596900,-126.656000,1240.700000)-(32.388200,-106.410000,1255.080000)",
+      "boundsMm": {
+        "min": [
+          16.5969,
+          -126.656,
+          1240.7
+        ],
+        "max": [
+          32.3882,
+          -106.41,
+          1255.08
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2426_BP22547_FMA7254_Left posterior cusp of aortic valve.obj",
+      "sha256": "b9285bba5a95fb08e2a0f3cf6a59c454fed90aa5d392fd4b97f760f16bae7455",
+      "geometrySha256": "7ca109ef02090e77a823c19c7e627c7266f44de5bda7c09b4e9cb818dd05d9db",
+      "downloadBytes": 57046,
+      "usableMeshes": 1,
+      "vertices": 526,
+      "faces": 914,
+      "triangles": 914,
+      "mirror": {
+        "path": "meshes/FJ2426_BP22547_FMA7254_Left posterior cusp of aortic valve.obj",
+        "lfsSha256": "b9285bba5a95fb08e2a0f3cf6a59c454fed90aa5d392fd4b97f760f16bae7455"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2427",
+      "available": true,
+      "path": "source-obj/FJ2427.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior cusp of pulmonary valve",
+      "bp": "BP21607",
+      "fma": "FMA7250",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(23.549400,-142.209000,1245.189900)-(40.595900,-127.603000,1261.620000)",
+      "boundsMm": {
+        "min": [
+          23.5494,
+          -142.209,
+          1245.19
+        ],
+        "max": [
+          40.5959,
+          -127.603,
+          1261.62
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2427_BP21607_FMA7250_Posterior cusp of pulmonary valve.obj",
+      "sha256": "a78cfaf8ee0ff7e831d15b92168d3fc93de2a2909412105a27e95b210191da27",
+      "geometrySha256": "498aa581d4f65d6e741425bfafbbb609bbe96b7c57a4043aa354e03542cc99f8",
+      "downloadBytes": 62169,
+      "usableMeshes": 1,
+      "vertices": 573,
+      "faces": 996,
+      "triangles": 996,
+      "mirror": {
+        "path": "meshes/FJ2427_BP21607_FMA7250_Posterior cusp of pulmonary valve.obj",
+        "lfsSha256": "a78cfaf8ee0ff7e831d15b92168d3fc93de2a2909412105a27e95b210191da27"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2428",
+      "available": true,
+      "path": "source-obj/FJ2428.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Wall of ventricle",
+      "bp": "BP21837",
+      "fma": "FMA13884",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-23.017900,-176.605000,1174.189900)-(79.139600,-83.117700,1265.920000)",
+      "boundsMm": {
+        "min": [
+          -23.0179,
+          -176.605,
+          1174.19
+        ],
+        "max": [
+          79.1396,
+          -83.1177,
+          1265.92
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2428_BP21837_FMA13884_Wall of ventricle.obj",
+      "sha256": "db5d6415f07c42b7b1af03f66190679595f8b6c4ff659b8d571ba8694afed75f",
+      "geometrySha256": "80e49c13226b6803e7a7b1ea666bde8e889bab60407339bcba6241a7d54434d3",
+      "downloadBytes": 2660566,
+      "usableMeshes": 1,
+      "vertices": 21053,
+      "faces": 37442,
+      "triangles": 37442,
+      "mirror": {
+        "path": "meshes/FJ2428_BP21837_FMA13884_Wall of ventricle.obj",
+        "lfsSha256": "db5d6415f07c42b7b1af03f66190679595f8b6c4ff659b8d571ba8694afed75f"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 21053,
+        "triangles": 37442
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2429",
+      "available": true,
+      "path": "source-obj/FJ2429.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior papillary muscle of left ventricle",
+      "bp": "BP22988",
+      "fma": "FMA7266",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(46.464800,-146.920000,1188.439900)-(74.540400,-104.767000,1218.260000)",
+      "boundsMm": {
+        "min": [
+          46.4648,
+          -146.92,
+          1188.44
+        ],
+        "max": [
+          74.5404,
+          -104.767,
+          1218.26
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2429_BP22988_FMA7266_Posterior papillary muscle of left ventricle.obj",
+      "sha256": "cdce718990828a4311f5d274141f33b67e0508672a4e504cda372334f464194d",
+      "geometrySha256": "f1ec9621195c7864b51221bb13301c61d06aeab026225202637417af3c9a7bce",
+      "downloadBytes": 50923,
+      "usableMeshes": 1,
+      "vertices": 487,
+      "faces": 780,
+      "triangles": 780,
+      "mirror": {
+        "path": "meshes/FJ2429_BP22988_FMA7266_Posterior papillary muscle of left ventricle.obj",
+        "lfsSha256": "cdce718990828a4311f5d274141f33b67e0508672a4e504cda372334f464194d"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2430",
+      "available": true,
+      "path": "source-obj/FJ2430.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior papillary muscle of right ventricle",
+      "bp": "BP21414",
+      "fma": "FMA7261",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(7.164500,-160.418000,1178.439900)-(36.776600,-131.886000,1192.790000)",
+      "boundsMm": {
+        "min": [
+          7.16454,
+          -160.418,
+          1178.44
+        ],
+        "max": [
+          36.7766,
+          -131.886,
+          1192.79
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2430_BP21414_FMA7261_Posterior papillary muscle of right ventricle.obj",
+      "sha256": "8e7b9d7e574673905d701d0e78afb3cea8941832476eab24160c8e504ad1dd5f",
+      "geometrySha256": "afdc09ae7eaea761c79ca6544c2812a15bebf73022086096cb6a7237050cc5c0",
+      "downloadBytes": 48011,
+      "usableMeshes": 1,
+      "vertices": 484,
+      "faces": 692,
+      "triangles": 692,
+      "mirror": {
+        "path": "meshes/FJ2430_BP21414_FMA7261_Posterior papillary muscle of right ventricle.obj",
+        "lfsSha256": "8e7b9d7e574673905d701d0e78afb3cea8941832476eab24160c8e504ad1dd5f"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2431",
+      "available": true,
+      "path": "source-obj/FJ2431.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Right posterior cusp of aortic valve",
+      "bp": "BP22800",
+      "fma": "FMA7252",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(5.667700,-123.847000,1233.410000)-(23.239600,-104.826000,1250.520000)",
+      "boundsMm": {
+        "min": [
+          5.66774,
+          -123.847,
+          1233.41
+        ],
+        "max": [
+          23.2396,
+          -104.826,
+          1250.52
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2431_BP22800_FMA7252_Right posterior cusp of aortic valve.obj",
+      "sha256": "f18d0b8355da6918c23a28901fb5078ec0c0a15bc8dcb27e3177e1aa096b27e9",
+      "geometrySha256": "bdf947530f838eb342bed34a811b9a0e37de0d544e8004e6864378aa575121d2",
+      "downloadBytes": 21070,
+      "usableMeshes": 1,
+      "vertices": 215,
+      "faces": 316,
+      "triangles": 316,
+      "mirror": {
+        "path": "meshes/FJ2431_BP22800_FMA7252_Right posterior cusp of aortic valve.obj",
+        "lfsSha256": "f18d0b8355da6918c23a28901fb5078ec0c0a15bc8dcb27e3177e1aa096b27e9"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2432",
+      "available": true,
+      "path": "source-obj/FJ2432.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior leaflet of mitral valve",
+      "bp": "BP22942",
+      "fma": "FMA7243",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(13.574500,-123.267000,1199.600000)-(62.854300,-85.444600,1231.650000)",
+      "boundsMm": {
+        "min": [
+          13.5745,
+          -123.267,
+          1199.6
+        ],
+        "max": [
+          62.8543,
+          -85.4446,
+          1231.65
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2432_BP22942_FMA7243_Posterior leaflet of mitral valve.obj",
+      "sha256": "7bf4f66e3081b7021a87cf778155e84ceee7994306723be62bfc712f79806591",
+      "geometrySha256": "29eba4d89a73e091c8162b8f57a04caf726f462cb3eb2759431094981081cd26",
+      "downloadBytes": 274256,
+      "usableMeshes": 1,
+      "vertices": 2560,
+      "faces": 3820,
+      "triangles": 3820,
+      "mirror": {
+        "path": "meshes/FJ2432_BP22942_FMA7243_Posterior leaflet of mitral valve.obj",
+        "lfsSha256": "7bf4f66e3081b7021a87cf778155e84ceee7994306723be62bfc712f79806591"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2433",
+      "available": true,
+      "path": "source-obj/FJ2433.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior leaflet of tricuspid valve",
+      "bp": "BP21500",
+      "fma": "FMA7239",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-18.957800,-145.256000,1188.640000)-(16.470100,-113.717000,1216.200000)",
+      "boundsMm": {
+        "min": [
+          -18.9578,
+          -145.256,
+          1188.64
+        ],
+        "max": [
+          16.4701,
+          -113.717,
+          1216.2
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2433_BP21500_FMA7239_Posterior leaflet of tricuspid valve.obj",
+      "sha256": "29198c03d7745b4554d2a508d2a53a43cb84e8d65a6e1ef193ff2a02f116dd51",
+      "geometrySha256": "9ed82c0c380f8bf820ca8eba833da9407991187165b7bb1fb18e001d578d1de9",
+      "downloadBytes": 324995,
+      "usableMeshes": 1,
+      "vertices": 2729,
+      "faces": 4926,
+      "triangles": 4926,
+      "mirror": {
+        "path": "meshes/FJ2433_BP21500_FMA7239_Posterior leaflet of tricuspid valve.obj",
+        "lfsSha256": "29198c03d7745b4554d2a508d2a53a43cb84e8d65a6e1ef193ff2a02f116dd51"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2434",
+      "available": true,
+      "path": "source-obj/FJ2434.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Right anterior cusp of pulmonary valve",
+      "bp": "BP22523",
+      "fma": "FMA7249",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(8.767900,-156.869000,1248.070000)-(27.524500,-132.880000,1265.270000)",
+      "boundsMm": {
+        "min": [
+          8.76793,
+          -156.869,
+          1248.07
+        ],
+        "max": [
+          27.5245,
+          -132.88,
+          1265.27
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2434_BP22523_FMA7249_Right anterior cusp of pulmonary valve.obj",
+      "sha256": "012b7bd449c974327144d2de8e13872448e0e4849df09604286ac263612ed1fa",
+      "geometrySha256": "8c068826cc1ed731c448fee81ee2e28c8ee7eddb231f76e7e9c52d0d173279d1",
+      "downloadBytes": 84744,
+      "usableMeshes": 1,
+      "vertices": 769,
+      "faces": 1370,
+      "triangles": 1370,
+      "mirror": {
+        "path": "meshes/FJ2434_BP22523_FMA7249_Right anterior cusp of pulmonary valve.obj",
+        "lfsSha256": "012b7bd449c974327144d2de8e13872448e0e4849df09604286ac263612ed1fa"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2435",
+      "available": true,
+      "path": "source-obj/FJ2435.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Anterior cusp of aortic valve",
+      "bp": "BP22554",
+      "fma": "FMA7253",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(6.992200,-132.441000,1234.700000)-(26.656200,-118.971000,1252.730000)",
+      "boundsMm": {
+        "min": [
+          6.99224,
+          -132.441,
+          1234.7
+        ],
+        "max": [
+          26.6562,
+          -118.971,
+          1252.73
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2435_BP22554_FMA7253_Anterior cusp of aortic valve.obj",
+      "sha256": "15ead0ab5d697a839ad67f525f47bf5917938fcffe7191d1b7581023907d7893",
+      "geometrySha256": "d80680b24858cbc9f283f1d9966998eee1ed364b1cb170671772fc5b55c05fee",
+      "downloadBytes": 56152,
+      "usableMeshes": 1,
+      "vertices": 508,
+      "faces": 920,
+      "triangles": 920,
+      "mirror": {
+        "path": "meshes/FJ2435_BP22554_FMA7253_Anterior cusp of aortic valve.obj",
+        "lfsSha256": "15ead0ab5d697a839ad67f525f47bf5917938fcffe7191d1b7581023907d7893"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2436",
+      "available": true,
+      "path": "source-obj/FJ2436.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Septal leaflet of tricuspid valve",
+      "bp": "BP22521",
+      "fma": "FMA7240",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-6.484000,-137.745000,1213.140000)-(29.501400,-113.573000,1236.480000)",
+      "boundsMm": {
+        "min": [
+          -6.484,
+          -137.745,
+          1213.14
+        ],
+        "max": [
+          29.5014,
+          -113.573,
+          1236.48
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2436_BP22521_FMA7240_Septal leaflet of tricuspid valve.obj",
+      "sha256": "3355adc3a160df8fd9e59d2fb80b6b35ac3f0b002faa6346d4fd4ebf04860797",
+      "geometrySha256": "59184d9dddb034d4aded5518d3ddfb1b31cf592f05c2f6fbab86dcf3c601baf6",
+      "downloadBytes": 302230,
+      "usableMeshes": 1,
+      "vertices": 2591,
+      "faces": 4526,
+      "triangles": 4526,
+      "mirror": {
+        "path": "meshes/FJ2436_BP22521_FMA7240_Septal leaflet of tricuspid valve.obj",
+        "lfsSha256": "3355adc3a160df8fd9e59d2fb80b6b35ac3f0b002faa6346d4fd4ebf04860797"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2437",
+      "available": true,
+      "path": "source-obj/FJ2437.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Septal papillary muscle of right ventricle",
+      "bp": "BP21554",
+      "fma": "FMA7262",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(12.891200,-143.599000,1213.460000)-(32.174100,-128.195000,1240.170000)",
+      "boundsMm": {
+        "min": [
+          12.8912,
+          -143.599,
+          1213.46
+        ],
+        "max": [
+          32.1741,
+          -128.195,
+          1240.17
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2437_BP21554_FMA7262_Septal papillary muscle of right ventricle.obj",
+      "sha256": "b638fdffb640ecb02e95fbd2c08d983c0a122e71ae6b0d83de6cd0adaf22b2ea",
+      "geometrySha256": "bed13c9f92a4cbc6e346a9980b5788a9b7c7a7946daea2ec37fe9e2c99731470",
+      "downloadBytes": 55990,
+      "usableMeshes": 1,
+      "vertices": 539,
+      "faces": 844,
+      "triangles": 844,
+      "mirror": {
+        "path": "meshes/FJ2437_BP21554_FMA7262_Septal papillary muscle of right ventricle.obj",
+        "lfsSha256": "b638fdffb640ecb02e95fbd2c08d983c0a122e71ae6b0d83de6cd0adaf22b2ea"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2438",
+      "available": true,
+      "path": "source-obj/FJ2438.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Wall of left atrium",
+      "bp": "BP22747",
+      "fma": "FMA9531",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-22.880100,-151.151000,1199.430100)-(63.239200,-70.170400,1272.400000)",
+      "boundsMm": {
+        "min": [
+          -22.8801,
+          -151.151,
+          1199.43
+        ],
+        "max": [
+          63.2392,
+          -70.1704,
+          1272.4
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2438_BP22747_FMA9531_Wall of left atrium.obj",
+      "sha256": "17544b1214ea0626f9564aeb42b5bb9d52a126f22237a499f8de0eca6073d8a7",
+      "geometrySha256": "287eb0713b7eedc59d2467de5df5bf14b37f30e1b15173e4b4a3309f2fa5202f",
+      "downloadBytes": 509716,
+      "usableMeshes": 1,
+      "vertices": 4284,
+      "faces": 7544,
+      "triangles": 7544,
+      "mirror": {
+        "path": "meshes/FJ2438_BP22747_FMA9531_Wall of left atrium.obj",
+        "lfsSha256": "17544b1214ea0626f9564aeb42b5bb9d52a126f22237a499f8de0eca6073d8a7"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 4284,
+        "triangles": 7544
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2439",
+      "available": true,
+      "path": "source-obj/FJ2439.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Wall of right atrium",
+      "bp": "BP21422",
+      "fma": "FMA9457",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-36.303700,-162.645000,1183.080000)-(6.777900,-96.345000,1279.500000)",
+      "boundsMm": {
+        "min": [
+          -36.3037,
+          -162.645,
+          1183.08
+        ],
+        "max": [
+          6.77791,
+          -96.345,
+          1279.5
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2439_BP21422_FMA9457_Wall of right atrium.obj",
+      "sha256": "85fddffea47ac61de11d29219fc4f32dfc857d17b3082929a3f048c57522c887",
+      "geometrySha256": "1d49cb5df3dd094a62c3fec8398d243d53f2a793d51ee7f59108c27c5295bac7",
+      "downloadBytes": 1211319,
+      "usableMeshes": 1,
+      "vertices": 9887,
+      "faces": 17784,
+      "triangles": 17784,
+      "mirror": {
+        "path": "meshes/FJ2439_BP21422_FMA9457_Wall of right atrium.obj",
+        "lfsSha256": "85fddffea47ac61de11d29219fc4f32dfc857d17b3082929a3f048c57522c887"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 9887,
+        "triangles": 17784
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2631",
+      "available": true,
+      "path": "source-obj/FJ2631.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Trunk of anterior interventricular branch of left coronary artery",
+      "bp": "BP24013",
+      "fma": "FMA74912",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(33.292800,-168.008000,1179.540000)-(63.841300,-120.073000,1257.620000)",
+      "boundsMm": {
+        "min": [
+          33.2928,
+          -168.008,
+          1179.54
+        ],
+        "max": [
+          63.8413,
+          -120.073,
+          1257.62
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2631_BP24013_FMA74912_Trunk of anterior interventricular branch of left coronary artery.obj",
+      "sha256": "8326aefd6ff1ccf6ca7c3194ed61b57ed9d7ccf3376f537ae83eb08f4f824714",
+      "geometrySha256": "eb712ab601f358d2b202533950d0be030af3a98208fac7cef446fd1585f00c24",
+      "downloadBytes": 186677,
+      "usableMeshes": 1,
+      "vertices": 1549,
+      "faces": 3032,
+      "triangles": 3032,
+      "mirror": {
+        "path": "meshes/FJ2631_BP24013_FMA74912_Trunk of anterior interventricular branch of left coronary artery.obj",
+        "lfsSha256": "8326aefd6ff1ccf6ca7c3194ed61b57ed9d7ccf3376f537ae83eb08f4f824714"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 1549,
+        "triangles": 3032
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2632",
+      "available": true,
+      "path": "source-obj/FJ2632.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First right anterior branch of anterior interventricular branch of left coronary artery",
+      "bp": "BP22543",
+      "fma": "FMA3872",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(45.017600,-168.054000,1228.670000)-(49.955400,-163.655000,1230.460000)",
+      "boundsMm": {
+        "min": [
+          45.0176,
+          -168.054,
+          1228.67
+        ],
+        "max": [
+          49.9554,
+          -163.655,
+          1230.46
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2632_BP22543_FMA3872_First right anterior branch of anterior interventricular branch of left coronary artery.obj",
+      "sha256": "b653ea34526817c2a15cf825f0a168396266bd1efb61d34b4be33e73a932ade0",
+      "geometrySha256": "70c25a454a08437b2c72bf413f7c108d875e3776ec7d405318ae67628b2977e8",
+      "downloadBytes": 8182,
+      "usableMeshes": 1,
+      "vertices": 91,
+      "faces": 108,
+      "triangles": 108,
+      "mirror": {
+        "path": "meshes/FJ2632_BP22543_FMA3872_First right anterior branch of anterior interventricular branch of left coronary artery.obj",
+        "lfsSha256": "b653ea34526817c2a15cf825f0a168396266bd1efb61d34b4be33e73a932ade0"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 91,
+        "triangles": 108
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2633",
+      "available": true,
+      "path": "source-obj/FJ2633.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Diagonal branch of anterior descending branch of left coronary artery",
+      "bp": "BP22495",
+      "fma": "FMA3860",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(65.693400,-140.950000,1210.200000)-(78.143600,-120.501000,1236.730000)",
+      "boundsMm": {
+        "min": [
+          65.6934,
+          -140.95,
+          1210.2
+        ],
+        "max": [
+          78.1436,
+          -120.501,
+          1236.73
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2633_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+      "sha256": "eeb5ea431a6fb341b93122e9dc9f37e58ffc636d62693b1ede8ae1734eb4990b",
+      "geometrySha256": "c900dbefb68bbb2c4ef43b66a5c7dc396d00518c0b78aaf4f79c87254dbdc0e7",
+      "downloadBytes": 32449,
+      "usableMeshes": 1,
+      "vertices": 318,
+      "faces": 492,
+      "triangles": 492,
+      "mirror": {
+        "path": "meshes/FJ2633_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+        "lfsSha256": "eeb5ea431a6fb341b93122e9dc9f37e58ffc636d62693b1ede8ae1734eb4990b"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 318,
+        "triangles": 492
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2634",
+      "available": true,
+      "path": "source-obj/FJ2634.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Diagonal branch of anterior descending branch of left coronary artery",
+      "bp": "BP22495",
+      "fma": "FMA3860",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(70.702900,-131.152000,1227.620000)-(73.642600,-119.706000,1233.910000)",
+      "boundsMm": {
+        "min": [
+          70.7029,
+          -131.152,
+          1227.62
+        ],
+        "max": [
+          73.6426,
+          -119.706,
+          1233.91
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2634_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+      "sha256": "d030052a98a163245052d9a45e834ce0e06d737aa1889a030e4b2c06d2e651a9",
+      "geometrySha256": "7af8e5dc6f54d40dd5ef3f6dd816b69c5b68b381af054a0c25cd7c171b7fb8de",
+      "downloadBytes": 14481,
+      "usableMeshes": 1,
+      "vertices": 158,
+      "faces": 196,
+      "triangles": 196,
+      "mirror": {
+        "path": "meshes/FJ2634_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+        "lfsSha256": "d030052a98a163245052d9a45e834ce0e06d737aa1889a030e4b2c06d2e651a9"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 158,
+        "triangles": 196
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2635",
+      "available": true,
+      "path": "source-obj/FJ2635.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Diagonal branch of anterior descending branch of left coronary artery",
+      "bp": "BP22495",
+      "fma": "FMA3860",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(53.298400,-168.108000,1181.990000)-(67.316300,-156.679000,1227.620000)",
+      "boundsMm": {
+        "min": [
+          53.2984,
+          -168.108,
+          1181.99
+        ],
+        "max": [
+          67.3163,
+          -156.679,
+          1227.62
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2635_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+      "sha256": "9eadbf695e7807b3643ec7aafc5ab238c8710ffc305d6426170d624d582fe9b8",
+      "geometrySha256": "535c62c6e98808fd4393a48b108b7ce5ea338a3e44751c31681141802ba7f44c",
+      "downloadBytes": 50992,
+      "usableMeshes": 1,
+      "vertices": 495,
+      "faces": 766,
+      "triangles": 766,
+      "mirror": {
+        "path": "meshes/FJ2635_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+        "lfsSha256": "9eadbf695e7807b3643ec7aafc5ab238c8710ffc305d6426170d624d582fe9b8"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 495,
+        "triangles": 766
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2636",
+      "available": true,
+      "path": "source-obj/FJ2636.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Diagonal branch of anterior descending branch of left coronary artery",
+      "bp": "BP22495",
+      "fma": "FMA3860",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(59.333200,-167.282000,1204.820000)-(62.759800,-162.844000,1219.410000)",
+      "boundsMm": {
+        "min": [
+          59.3332,
+          -167.282,
+          1204.82
+        ],
+        "max": [
+          62.7598,
+          -162.844,
+          1219.41
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2636_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+      "sha256": "e67e0284046467c7ec7bb12d199afa39c184605339c4ff35291efa2909b5b4b7",
+      "geometrySha256": "dad9423c7b4a146003887811e98b16d1dde1754a2fea73516f5654469e90059d",
+      "downloadBytes": 28383,
+      "usableMeshes": 1,
+      "vertices": 282,
+      "faces": 420,
+      "triangles": 420,
+      "mirror": {
+        "path": "meshes/FJ2636_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+        "lfsSha256": "e67e0284046467c7ec7bb12d199afa39c184605339c4ff35291efa2909b5b4b7"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 282,
+        "triangles": 420
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2637",
+      "available": true,
+      "path": "source-obj/FJ2637.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Diagonal branch of anterior descending branch of left coronary artery",
+      "bp": "BP22495",
+      "fma": "FMA3860",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(62.935500,-161.326000,1182.730000)-(68.723900,-153.245000,1185.660000)",
+      "boundsMm": {
+        "min": [
+          62.9355,
+          -161.326,
+          1182.73
+        ],
+        "max": [
+          68.7239,
+          -153.245,
+          1185.66
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2637_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+      "sha256": "817bbf4d3bd19479825361fc0b0b82e09dd02e982278bc2f807dae26515f1efc",
+      "geometrySha256": "ddba2a489134e01ec15d793b6d24d5994a28172e9ebe469c83665051f369951a",
+      "downloadBytes": 12743,
+      "usableMeshes": 1,
+      "vertices": 144,
+      "faces": 160,
+      "triangles": 160,
+      "mirror": {
+        "path": "meshes/FJ2637_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+        "lfsSha256": "817bbf4d3bd19479825361fc0b0b82e09dd02e982278bc2f807dae26515f1efc"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 144,
+        "triangles": 160
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2638",
+      "available": true,
+      "path": "source-obj/FJ2638.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Diagonal branch of anterior descending branch of left coronary artery",
+      "bp": "BP22495",
+      "fma": "FMA3860",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(70.929700,-161.783000,1192.400000)-(76.010800,-151.165000,1198.990000)",
+      "boundsMm": {
+        "min": [
+          70.9297,
+          -161.783,
+          1192.4
+        ],
+        "max": [
+          76.0108,
+          -151.165,
+          1198.99
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2638_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+      "sha256": "280afe77fadfa7364097e918c66c4bf403305cde03ab9cdca4361379d08e2f03",
+      "geometrySha256": "3ac8702ad69bff4f33759d02230ddbfdef74d22e5eac35b3f6bad1a642f690ce",
+      "downloadBytes": 22447,
+      "usableMeshes": 1,
+      "vertices": 246,
+      "faces": 290,
+      "triangles": 290,
+      "mirror": {
+        "path": "meshes/FJ2638_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+        "lfsSha256": "280afe77fadfa7364097e918c66c4bf403305cde03ab9cdca4361379d08e2f03"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 246,
+        "triangles": 290
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2639",
+      "available": true,
+      "path": "source-obj/FJ2639.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Diagonal branch of anterior descending branch of left coronary artery",
+      "bp": "BP22495",
+      "fma": "FMA3860",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(71.111400,-153.497000,1183.580000)-(73.208900,-144.507000,1188.540000)",
+      "boundsMm": {
+        "min": [
+          71.1114,
+          -153.497,
+          1183.58
+        ],
+        "max": [
+          73.2089,
+          -144.507,
+          1188.54
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2639_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+      "sha256": "4be6e0eee3ef35771738e7561b4e5fe4952618b5ec240623322d615e7e3ac429",
+      "geometrySha256": "cc24b1c10cb4195c2fa56780cc8b87f406cb0c1625623c38a99316643fe40dc4",
+      "downloadBytes": 11152,
+      "usableMeshes": 1,
+      "vertices": 122,
+      "faces": 150,
+      "triangles": 150,
+      "mirror": {
+        "path": "meshes/FJ2639_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+        "lfsSha256": "4be6e0eee3ef35771738e7561b4e5fe4952618b5ec240623322d615e7e3ac429"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 122,
+        "triangles": 150
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2640",
+      "available": true,
+      "path": "source-obj/FJ2640.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Diagonal branch of anterior descending branch of left coronary artery",
+      "bp": "BP22495",
+      "fma": "FMA3860",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(67.414500,-153.498000,1179.450000)-(73.208800,-146.035000,1188.550100)",
+      "boundsMm": {
+        "min": [
+          67.4145,
+          -153.498,
+          1179.45
+        ],
+        "max": [
+          73.2088,
+          -146.035,
+          1188.55
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2640_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+      "sha256": "447e721a0c37f05065862c659bddfb652e00666f7ab22320edce004409c195c0",
+      "geometrySha256": "8e2ac1bce6eece78963ec25ff14c00535f4f84323467964b3ed3073cc426e16a",
+      "downloadBytes": 19948,
+      "usableMeshes": 1,
+      "vertices": 218,
+      "faces": 260,
+      "triangles": 260,
+      "mirror": {
+        "path": "meshes/FJ2640_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+        "lfsSha256": "447e721a0c37f05065862c659bddfb652e00666f7ab22320edce004409c195c0"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 218,
+        "triangles": 260
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2641",
+      "available": true,
+      "path": "source-obj/FJ2641.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Third right anterior branch of anterior interventricular branch of left coronary artery",
+      "bp": "BP22502",
+      "fma": "FMA3876",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(46.269200,-168.949000,1181.670000)-(54.627100,-158.587000,1205.540000)",
+      "boundsMm": {
+        "min": [
+          46.2692,
+          -168.949,
+          1181.67
+        ],
+        "max": [
+          54.6271,
+          -158.587,
+          1205.54
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2641_BP22502_FMA3876_Third right anterior branch of anterior interventricular branch of left coronary artery.obj",
+      "sha256": "4a17b0b1bb0dc1f12a4855b2a42c295d99a3c7c94742e9c8d1e0c38aac1ea768",
+      "geometrySha256": "77e2614703ab98b1f2c72fcb34faa87fcca74e6178050b6381b50eb722c4fea3",
+      "downloadBytes": 31409,
+      "usableMeshes": 1,
+      "vertices": 322,
+      "faces": 442,
+      "triangles": 442,
+      "mirror": {
+        "path": "meshes/FJ2641_BP22502_FMA3876_Third right anterior branch of anterior interventricular branch of left coronary artery.obj",
+        "lfsSha256": "4a17b0b1bb0dc1f12a4855b2a42c295d99a3c7c94742e9c8d1e0c38aac1ea768"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 322,
+        "triangles": 442
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2642",
+      "available": true,
+      "path": "source-obj/FJ2642.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Diagonal branch of anterior descending branch of left coronary artery",
+      "bp": "BP22495",
+      "fma": "FMA3860",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(50.062600,-147.441000,1194.770000)-(79.391300,-133.270000,1243.610000)",
+      "boundsMm": {
+        "min": [
+          50.0626,
+          -147.441,
+          1194.77
+        ],
+        "max": [
+          79.3913,
+          -133.27,
+          1243.61
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2642_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+      "sha256": "acf8dd2962cef27a29ffb4f1f2a24a47ceb1397bb1ad85a4b56088facb29f506",
+      "geometrySha256": "78f0ff80b6907fd80d857ca73cf8c017e6b875cbcafae128f2d82df0d55588bb",
+      "downloadBytes": 58500,
+      "usableMeshes": 1,
+      "vertices": 525,
+      "faces": 964,
+      "triangles": 964,
+      "mirror": {
+        "path": "meshes/FJ2642_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+        "lfsSha256": "acf8dd2962cef27a29ffb4f1f2a24a47ceb1397bb1ad85a4b56088facb29f506"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 525,
+        "triangles": 964
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2643",
+      "available": true,
+      "path": "source-obj/FJ2643.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Conus branch of anterior interventricular branch of left coronary artery",
+      "bp": "BP22544",
+      "fma": "FMA3868",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(33.617800,-171.783000,1239.390000)-(50.415700,-143.073000,1247.020000)",
+      "boundsMm": {
+        "min": [
+          33.6178,
+          -171.783,
+          1239.39
+        ],
+        "max": [
+          50.4157,
+          -143.073,
+          1247.02
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2643_BP22544_FMA3868_Conus branch of anterior interventricular branch of left coronary artery.obj",
+      "sha256": "7d7f074ac3a950f9db7d4e632525aa08cb611f4ac610c2a140d6bc4b0abbd118",
+      "geometrySha256": "38b8d748cb9234f97ccfb19e7786501319e9bd6db28bdc47089b47e26d5a7f46",
+      "downloadBytes": 29271,
+      "usableMeshes": 1,
+      "vertices": 269,
+      "faces": 478,
+      "triangles": 478,
+      "mirror": {
+        "path": "meshes/FJ2643_BP22544_FMA3868_Conus branch of anterior interventricular branch of left coronary artery.obj",
+        "lfsSha256": "7d7f074ac3a950f9db7d4e632525aa08cb611f4ac610c2a140d6bc4b0abbd118"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 269,
+        "triangles": 478
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2644",
+      "available": true,
+      "path": "source-obj/FJ2644.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Conus branch of anterior interventricular branch of left coronary artery",
+      "bp": "BP22544",
+      "fma": "FMA3868",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(28.831800,-170.795000,1243.300100)-(43.360500,-163.058000,1246.950000)",
+      "boundsMm": {
+        "min": [
+          28.8318,
+          -170.795,
+          1243.3
+        ],
+        "max": [
+          43.3605,
+          -163.058,
+          1246.95
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2644_BP22544_FMA3868_Conus branch of anterior interventricular branch of left coronary artery.obj",
+      "sha256": "bbab41619b7a4b5275240ab12f6003591108f70d39c18813f749d4d4d2636de8",
+      "geometrySha256": "8a3a2683cc76c3858ee87df1c978a989a11a02da13054dc610906e850b7a40a1",
+      "downloadBytes": 19694,
+      "usableMeshes": 1,
+      "vertices": 193,
+      "faces": 306,
+      "triangles": 306,
+      "mirror": {
+        "path": "meshes/FJ2644_BP22544_FMA3868_Conus branch of anterior interventricular branch of left coronary artery.obj",
+        "lfsSha256": "bbab41619b7a4b5275240ab12f6003591108f70d39c18813f749d4d4d2636de8"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 193,
+        "triangles": 306
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2645",
+      "available": true,
+      "path": "source-obj/FJ2645.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First right anterior branch of anterior interventricular branch of left coronary artery",
+      "bp": "BP22543",
+      "fma": "FMA3872",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(42.177000,-171.082000,1223.580000)-(53.142800,-152.680000,1235.500000)",
+      "boundsMm": {
+        "min": [
+          42.177,
+          -171.082,
+          1223.58
+        ],
+        "max": [
+          53.1428,
+          -152.68,
+          1235.5
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2645_BP22543_FMA3872_First right anterior branch of anterior interventricular branch of left coronary artery.obj",
+      "sha256": "0e91acb8544c15e145c742c42c7c2d7d38996cc16f2596982c6ccfcf3b58c740",
+      "geometrySha256": "449761f1ee093d9f33cc227a57931711b1c1c4787a86f74122925d9653d4cae8",
+      "downloadBytes": 21928,
+      "usableMeshes": 1,
+      "vertices": 224,
+      "faces": 318,
+      "triangles": 318,
+      "mirror": {
+        "path": "meshes/FJ2645_BP22543_FMA3872_First right anterior branch of anterior interventricular branch of left coronary artery.obj",
+        "lfsSha256": "0e91acb8544c15e145c742c42c7c2d7d38996cc16f2596982c6ccfcf3b58c740"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 224,
+        "triangles": 318
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2646",
+      "available": true,
+      "path": "source-obj/FJ2646.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Second right anterior branch of anterior interventricular branch of left coronary artery",
+      "bp": "BP22542",
+      "fma": "FMA3874",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(37.166400,-172.766000,1196.870000)-(54.544000,-160.897000,1222.300100)",
+      "boundsMm": {
+        "min": [
+          37.1664,
+          -172.766,
+          1196.87
+        ],
+        "max": [
+          54.544,
+          -160.897,
+          1222.3
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2646_BP22542_FMA3874_Second right anterior branch of anterior interventricular branch of left coronary artery.obj",
+      "sha256": "90a135de5abeea8f79af8f76b631dba9dfb679b318b08775972d96d08dc16d3c",
+      "geometrySha256": "3b380a31524b4e152fce326c93ccf60d1d6095eeb0dff60ac33ff72e87daefbf",
+      "downloadBytes": 30116,
+      "usableMeshes": 1,
+      "vertices": 287,
+      "faces": 470,
+      "triangles": 470,
+      "mirror": {
+        "path": "meshes/FJ2646_BP22542_FMA3874_Second right anterior branch of anterior interventricular branch of left coronary artery.obj",
+        "lfsSha256": "90a135de5abeea8f79af8f76b631dba9dfb679b318b08775972d96d08dc16d3c"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 287,
+        "triangles": 470
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2647",
+      "available": true,
+      "path": "source-obj/FJ2647.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Third right anterior branch of anterior interventricular branch of left coronary artery",
+      "bp": "BP22502",
+      "fma": "FMA3876",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(40.427000,-167.238000,1182.830000)-(47.104100,-160.586000,1192.260000)",
+      "boundsMm": {
+        "min": [
+          40.427,
+          -167.238,
+          1182.83
+        ],
+        "max": [
+          47.1041,
+          -160.586,
+          1192.26
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2647_BP22502_FMA3876_Third right anterior branch of anterior interventricular branch of left coronary artery.obj",
+      "sha256": "b2c91c85da08afc324be6da8e010235d66ebd6df0cb412c7fea3ec44f44b05c9",
+      "geometrySha256": "fe3b2a848ed943e882b7b09e71b8f2df8d23e5859b43c50cd70a6ca96230dae1",
+      "downloadBytes": 21034,
+      "usableMeshes": 1,
+      "vertices": 216,
+      "faces": 306,
+      "triangles": 306,
+      "mirror": {
+        "path": "meshes/FJ2647_BP22502_FMA3876_Third right anterior branch of anterior interventricular branch of left coronary artery.obj",
+        "lfsSha256": "b2c91c85da08afc324be6da8e010235d66ebd6df0cb412c7fea3ec44f44b05c9"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 216,
+        "triangles": 306
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2648",
+      "available": true,
+      "path": "source-obj/FJ2648.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Diagonal branch of anterior descending branch of left coronary artery",
+      "bp": "BP22495",
+      "fma": "FMA3860",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(74.363200,-148.184000,1210.090000)-(77.092600,-140.968000,1223.070000)",
+      "boundsMm": {
+        "min": [
+          74.3632,
+          -148.184,
+          1210.09
+        ],
+        "max": [
+          77.0926,
+          -140.968,
+          1223.07
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2648_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+      "sha256": "006d74143e679b5ce2251007675d2ca131f50fd7ded0ac5a18f6fa82467671d3",
+      "geometrySha256": "5f6accf5d733a2707bb9c5c5e42c6302b0e9027b72100a0c3cae61a0eb3bfa7b",
+      "downloadBytes": 19665,
+      "usableMeshes": 1,
+      "vertices": 203,
+      "faces": 286,
+      "triangles": 286,
+      "mirror": {
+        "path": "meshes/FJ2648_BP22495_FMA3860_Diagonal branch of anterior descending branch of left coronary artery.obj",
+        "lfsSha256": "006d74143e679b5ce2251007675d2ca131f50fd7ded0ac5a18f6fa82467671d3"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 203,
+        "triangles": 286
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2649",
+      "available": true,
+      "path": "source-obj/FJ2649.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Circumflex branch of left coronary artery",
+      "bp": "BP19556",
+      "fma": "FMA3895",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(34.355300,-121.957000,1222.380000)-(50.517700,-86.980500,1256.310100)",
+      "boundsMm": {
+        "min": [
+          34.3553,
+          -121.957,
+          1222.38
+        ],
+        "max": [
+          50.5177,
+          -86.9805,
+          1256.31
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2649_BP19556_FMA3895_Circumflex branch of left coronary artery.obj",
+      "sha256": "16423ff420831deba4e5c8106233e7778e5fb246be8d36302d766c7624a59899",
+      "geometrySha256": "62c43cabb97677655796f80f4af1c424ac7ffcf022929b28420c1e4fe648f67a",
+      "downloadBytes": 80670,
+      "usableMeshes": 1,
+      "vertices": 692,
+      "faces": 1380,
+      "triangles": 1380,
+      "mirror": {
+        "path": "meshes/FJ2649_BP19556_FMA3895_Circumflex branch of left coronary artery.obj",
+        "lfsSha256": "16423ff420831deba4e5c8106233e7778e5fb246be8d36302d766c7624a59899"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 692,
+        "triangles": 1380
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2650",
+      "available": true,
+      "path": "source-obj/FJ2650.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Circumflex branch of left coronary artery",
+      "bp": "BP19556",
+      "fma": "FMA3895",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(55.286500,-95.763400,1199.680100)-(59.817600,-89.426400,1216.540000)",
+      "boundsMm": {
+        "min": [
+          55.2865,
+          -95.7634,
+          1199.68
+        ],
+        "max": [
+          59.8176,
+          -89.4264,
+          1216.54
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2650_BP19556_FMA3895_Circumflex branch of left coronary artery.obj",
+      "sha256": "e1efc5c1ef91d55e998ae89b66645a4c36e23f72350240562ee60ecbeae9b3f0",
+      "geometrySha256": "ea3ecf232d832cffcfcafa0fed0d2328ee2b46c6a814e9ac70eb5422d00691dd",
+      "downloadBytes": 29455,
+      "usableMeshes": 1,
+      "vertices": 316,
+      "faces": 396,
+      "triangles": 396,
+      "mirror": {
+        "path": "meshes/FJ2650_BP19556_FMA3895_Circumflex branch of left coronary artery.obj",
+        "lfsSha256": "e1efc5c1ef91d55e998ae89b66645a4c36e23f72350240562ee60ecbeae9b3f0"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 316,
+        "triangles": 396
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2651",
+      "available": true,
+      "path": "source-obj/FJ2651.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Circumflex branch of left coronary artery",
+      "bp": "BP19556",
+      "fma": "FMA3895",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(58.756000,-115.551000,1211.070000)-(75.633200,-92.256200,1218.220000)",
+      "boundsMm": {
+        "min": [
+          58.756,
+          -115.551,
+          1211.07
+        ],
+        "max": [
+          75.6332,
+          -92.2562,
+          1218.22
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2651_BP19556_FMA3895_Circumflex branch of left coronary artery.obj",
+      "sha256": "409ebe0e4d2ea2504099de28853e3bbe11b1d165d5ae2f8212c22f7124f2d16c",
+      "geometrySha256": "54c9186d7465a47b16c6552f5e9e1899baef8640b7f7c6c251c802ae1d05f50b",
+      "downloadBytes": 37493,
+      "usableMeshes": 1,
+      "vertices": 395,
+      "faces": 510,
+      "triangles": 510,
+      "mirror": {
+        "path": "meshes/FJ2651_BP19556_FMA3895_Circumflex branch of left coronary artery.obj",
+        "lfsSha256": "409ebe0e4d2ea2504099de28853e3bbe11b1d165d5ae2f8212c22f7124f2d16c"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 395,
+        "triangles": 510
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2653",
+      "available": true,
+      "path": "source-obj/FJ2653.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Circumflex branch of left coronary artery",
+      "bp": "BP19556",
+      "fma": "FMA3895",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(73.745700,-128.307000,1188.330000)-(76.831100,-119.449000,1198.680100)",
+      "boundsMm": {
+        "min": [
+          73.7457,
+          -128.307,
+          1188.33
+        ],
+        "max": [
+          76.8311,
+          -119.449,
+          1198.68
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2653_BP19556_FMA3895_Circumflex branch of left coronary artery.obj",
+      "sha256": "f380e4f51985b94dc14f4c7c8cf2982b386b281d3b45c475a58462b6825f8bd2",
+      "geometrySha256": "f82c197f004e1e62cf1110eaa4e2506c55f0a84f5d6d237c22623e85c03cac72",
+      "downloadBytes": 20597,
+      "usableMeshes": 1,
+      "vertices": 232,
+      "faces": 252,
+      "triangles": 252,
+      "mirror": {
+        "path": "meshes/FJ2653_BP19556_FMA3895_Circumflex branch of left coronary artery.obj",
+        "lfsSha256": "f380e4f51985b94dc14f4c7c8cf2982b386b281d3b45c475a58462b6825f8bd2"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 232,
+        "triangles": 252
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2654",
+      "available": true,
+      "path": "source-obj/FJ2654.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Circumflex branch of left coronary artery",
+      "bp": "BP19556",
+      "fma": "FMA3895",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(74.166700,-142.845000,1187.820000)-(76.491600,-131.297000,1192.210000)",
+      "boundsMm": {
+        "min": [
+          74.1667,
+          -142.845,
+          1187.82
+        ],
+        "max": [
+          76.4916,
+          -131.297,
+          1192.21
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2654_BP19556_FMA3895_Circumflex branch of left coronary artery.obj",
+      "sha256": "2f5c858e3fa477aa5fd4d6298b3354fa4c9a8478b7d0ab5a0c8fff37f7f44405",
+      "geometrySha256": "215eb7d6c65f0c85b3074a78f966be74cf34437c9b61f813695ef5996567128f",
+      "downloadBytes": 13415,
+      "usableMeshes": 1,
+      "vertices": 150,
+      "faces": 172,
+      "triangles": 172,
+      "mirror": {
+        "path": "meshes/FJ2654_BP19556_FMA3895_Circumflex branch of left coronary artery.obj",
+        "lfsSha256": "2f5c858e3fa477aa5fd4d6298b3354fa4c9a8478b7d0ab5a0c8fff37f7f44405"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 150,
+        "triangles": 172
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2667",
+      "available": true,
+      "path": "source-obj/FJ2667.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Marginal branch of right coronary artery",
+      "bp": "BP22716",
+      "fma": "FMA3818",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(13.297500,-173.963000,1195.640000)-(33.977000,-169.338000,1204.850000)",
+      "boundsMm": {
+        "min": [
+          13.2975,
+          -173.963,
+          1195.64
+        ],
+        "max": [
+          33.977,
+          -169.338,
+          1204.85
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2667_BP22716_FMA3818_Marginal branch of right coronary artery.obj",
+      "sha256": "f516e305a8c7362dc92d808896b1b3c1e259a0826b1003506246e01df529f721",
+      "geometrySha256": "901390b4fd883fc4fb48c058e0060d54b8a66b401610bdd1699d3b3042833eb2",
+      "downloadBytes": 25544,
+      "usableMeshes": 1,
+      "vertices": 267,
+      "faces": 360,
+      "triangles": 360,
+      "mirror": {
+        "path": "meshes/FJ2667_BP22716_FMA3818_Marginal branch of right coronary artery.obj",
+        "lfsSha256": "f516e305a8c7362dc92d808896b1b3c1e259a0826b1003506246e01df529f721"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 267,
+        "triangles": 360
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2668",
+      "available": true,
+      "path": "source-obj/FJ2668.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Marginal branch of right coronary artery",
+      "bp": "BP22716",
+      "fma": "FMA3818",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(23.762300,-173.797000,1201.580000)-(35.717600,-172.332000,1205.790000)",
+      "boundsMm": {
+        "min": [
+          23.7623,
+          -173.797,
+          1201.58
+        ],
+        "max": [
+          35.7176,
+          -172.332,
+          1205.79
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2668_BP22716_FMA3818_Marginal branch of right coronary artery.obj",
+      "sha256": "1f5ab9505a02b6c20232dab1643627f8246e9414a264beec40b5da4b475c5349",
+      "geometrySha256": "69286eb9f1d6d799720db10cf8239a307ae491e77cc4e809cdd61d1a9da36a88",
+      "downloadBytes": 16036,
+      "usableMeshes": 1,
+      "vertices": 176,
+      "faces": 216,
+      "triangles": 216,
+      "mirror": {
+        "path": "meshes/FJ2668_BP22716_FMA3818_Marginal branch of right coronary artery.obj",
+        "lfsSha256": "1f5ab9505a02b6c20232dab1643627f8246e9414a264beec40b5da4b475c5349"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 176,
+        "triangles": 216
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2670",
+      "available": true,
+      "path": "source-obj/FJ2670.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Conus branch of right coronary artery",
+      "bp": "BP24006",
+      "fma": "FMA3807",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(7.007900,-169.622000,1247.030000)-(26.870700,-151.582000,1259.080000)",
+      "boundsMm": {
+        "min": [
+          7.00791,
+          -169.622,
+          1247.03
+        ],
+        "max": [
+          26.8707,
+          -151.582,
+          1259.08
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2670_BP24006_FMA3807_Conus branch of right coronary artery.obj",
+      "sha256": "fec68104d5f5364d1f66cf0e9f778ad0374356e3d77835df961665d1b7ddcf28",
+      "geometrySha256": "8645ea2a082b66932f0bc9944c474b12d1ae26d88648ccbf8263b30a92ed2b8a",
+      "downloadBytes": 28601,
+      "usableMeshes": 1,
+      "vertices": 280,
+      "faces": 442,
+      "triangles": 442,
+      "mirror": {
+        "path": "meshes/FJ2670_BP24006_FMA3807_Conus branch of right coronary artery.obj",
+        "lfsSha256": "fec68104d5f5364d1f66cf0e9f778ad0374356e3d77835df961665d1b7ddcf28"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 280,
+        "triangles": 442
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2671",
+      "available": true,
+      "path": "source-obj/FJ2671.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First anterior ventricular branch of right coronary artery",
+      "bp": "BP24086",
+      "fma": "FMA3815",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(0.417100,-176.517000,1222.240000)-(24.483200,-159.262000,1245.430100)",
+      "boundsMm": {
+        "min": [
+          0.417048,
+          -176.517,
+          1222.24
+        ],
+        "max": [
+          24.4832,
+          -159.262,
+          1245.43
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2671_BP24086_FMA3815_First anterior ventricular branch of right coronary artery.obj",
+      "sha256": "0de95203caeb8c7230653a6e5956de031a2f9bfa4f5c7ebcdd9aa6d23e9f7b1b",
+      "geometrySha256": "c3f9a9dc197b0a6c2bd3203ed5fb1f68bdb36df98c55292e89fd01ea4180094f",
+      "downloadBytes": 31668,
+      "usableMeshes": 1,
+      "vertices": 313,
+      "faces": 478,
+      "triangles": 478,
+      "mirror": {
+        "path": "meshes/FJ2671_BP24086_FMA3815_First anterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "0de95203caeb8c7230653a6e5956de031a2f9bfa4f5c7ebcdd9aa6d23e9f7b1b"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 313,
+        "triangles": 478
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2672",
+      "available": true,
+      "path": "source-obj/FJ2672.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Marginal branch of right coronary artery",
+      "bp": "BP22716",
+      "fma": "FMA3818",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-14.289600,-173.149000,1194.380000)-(26.030100,-158.580000,1220.110000)",
+      "boundsMm": {
+        "min": [
+          -14.2896,
+          -173.149,
+          1194.38
+        ],
+        "max": [
+          26.0301,
+          -158.58,
+          1220.11
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2672_BP22716_FMA3818_Marginal branch of right coronary artery.obj",
+      "sha256": "e0ae539f652a3b81cccf57db521fd29e328b2fe8f49e703e76556323fbbe1c9c",
+      "geometrySha256": "85d0aad015eca96dbe10079df406cc0acc73de3763cabbf0159e6d65e4899de3",
+      "downloadBytes": 47586,
+      "usableMeshes": 1,
+      "vertices": 447,
+      "faces": 742,
+      "triangles": 742,
+      "mirror": {
+        "path": "meshes/FJ2672_BP22716_FMA3818_Marginal branch of right coronary artery.obj",
+        "lfsSha256": "e0ae539f652a3b81cccf57db521fd29e328b2fe8f49e703e76556323fbbe1c9c"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 447,
+        "triangles": 742
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2673",
+      "available": true,
+      "path": "source-obj/FJ2673.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First anterior ventricular branch of right coronary artery",
+      "bp": "BP24086",
+      "fma": "FMA3815",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(11.319500,-176.509000,1222.500000)-(33.614500,-172.346000,1232.470000)",
+      "boundsMm": {
+        "min": [
+          11.3195,
+          -176.509,
+          1222.5
+        ],
+        "max": [
+          33.6145,
+          -172.346,
+          1232.47
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2673_BP24086_FMA3815_First anterior ventricular branch of right coronary artery.obj",
+      "sha256": "80de74555454b5a2940d77894cb6784f4f457db0e2829ea1a32dd822194ba70f",
+      "geometrySha256": "2e6af04ca1adfd0cc47275186dcdcd396c6fc399a7e81fa933aa5c2eb3c7db0a",
+      "downloadBytes": 23463,
+      "usableMeshes": 1,
+      "vertices": 243,
+      "faces": 338,
+      "triangles": 338,
+      "mirror": {
+        "path": "meshes/FJ2673_BP24086_FMA3815_First anterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "80de74555454b5a2940d77894cb6784f4f457db0e2829ea1a32dd822194ba70f"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 243,
+        "triangles": 338
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2674",
+      "available": true,
+      "path": "source-obj/FJ2674.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Marginal branch of right coronary artery",
+      "bp": "BP22716",
+      "fma": "FMA3818",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(3.937200,-170.947000,1195.560100)-(15.607600,-167.824000,1207.930100)",
+      "boundsMm": {
+        "min": [
+          3.9372,
+          -170.947,
+          1195.56
+        ],
+        "max": [
+          15.6076,
+          -167.824,
+          1207.93
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2674_BP22716_FMA3818_Marginal branch of right coronary artery.obj",
+      "sha256": "94cd64b24fdf52ed605e5ecfae7187a44a7ef087be64a9f67e340206d9b7a506",
+      "geometrySha256": "814aecc24802eb9543b3f42ec17b2f7db9bbf572942accec8e05bbb6dc94a7e6",
+      "downloadBytes": 18442,
+      "usableMeshes": 1,
+      "vertices": 186,
+      "faces": 284,
+      "triangles": 284,
+      "mirror": {
+        "path": "meshes/FJ2674_BP22716_FMA3818_Marginal branch of right coronary artery.obj",
+        "lfsSha256": "94cd64b24fdf52ed605e5ecfae7187a44a7ef087be64a9f67e340206d9b7a506"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 186,
+        "triangles": 284
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2675",
+      "available": true,
+      "path": "source-obj/FJ2675.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Marginal branch of right coronary artery",
+      "bp": "BP22716",
+      "fma": "FMA3818",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-6.414800,-166.412000,1203.130000)-(-0.126100,-164.082000,1212.530000)",
+      "boundsMm": {
+        "min": [
+          -6.41476,
+          -166.412,
+          1203.13
+        ],
+        "max": [
+          -0.126139,
+          -164.082,
+          1212.53
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2675_BP22716_FMA3818_Marginal branch of right coronary artery.obj",
+      "sha256": "d4938b2a2a30b58c89971718f301df4e5bf77e907f19611f9d570a03cc0c1726",
+      "geometrySha256": "b858f06581b9ffb1fb548cd3f9e0c08f270a23983219926426f94d098afbe7b9",
+      "downloadBytes": 14017,
+      "usableMeshes": 1,
+      "vertices": 148,
+      "faces": 200,
+      "triangles": 200,
+      "mirror": {
+        "path": "meshes/FJ2675_BP22716_FMA3818_Marginal branch of right coronary artery.obj",
+        "lfsSha256": "d4938b2a2a30b58c89971718f301df4e5bf77e907f19611f9d570a03cc0c1726"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 148,
+        "triangles": 200
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2676",
+      "available": true,
+      "path": "source-obj/FJ2676.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Conus branch of right coronary artery",
+      "bp": "BP24006",
+      "fma": "FMA3807",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(18.433800,-165.493000,1253.439900)-(32.723900,-163.242000,1257.640000)",
+      "boundsMm": {
+        "min": [
+          18.4338,
+          -165.493,
+          1253.44
+        ],
+        "max": [
+          32.7239,
+          -163.242,
+          1257.64
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2676_BP24006_FMA3807_Conus branch of right coronary artery.obj",
+      "sha256": "19973b556aca4e69e52f2d44b443dac39188845e1c14b14b743af3570f870cb1",
+      "geometrySha256": "6bfdd084ad77519d046b605549fc5288b07054398b9e96f319a162527dd9d769",
+      "downloadBytes": 21891,
+      "usableMeshes": 1,
+      "vertices": 233,
+      "faces": 304,
+      "triangles": 304,
+      "mirror": {
+        "path": "meshes/FJ2676_BP24006_FMA3807_Conus branch of right coronary artery.obj",
+        "lfsSha256": "19973b556aca4e69e52f2d44b443dac39188845e1c14b14b743af3570f870cb1"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 233,
+        "triangles": 304
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2677",
+      "available": true,
+      "path": "source-obj/FJ2677.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First anterior ventricular branch of right coronary artery",
+      "bp": "BP24086",
+      "fma": "FMA3815",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(20.933200,-176.313000,1226.870000)-(34.177000,-174.160000,1231.439900)",
+      "boundsMm": {
+        "min": [
+          20.9332,
+          -176.313,
+          1226.87
+        ],
+        "max": [
+          34.177,
+          -174.16,
+          1231.44
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2677_BP24086_FMA3815_First anterior ventricular branch of right coronary artery.obj",
+      "sha256": "19d779cd97d2fd8233d355204f6a4ccd0aa6802ddd67ffa08a3e72f8fb5452f8",
+      "geometrySha256": "88370e50d98b0add38bc5d63edf8bf8f0c941eb7fff866148e533e49bf27d0b8",
+      "downloadBytes": 18355,
+      "usableMeshes": 1,
+      "vertices": 198,
+      "faces": 252,
+      "triangles": 252,
+      "mirror": {
+        "path": "meshes/FJ2677_BP24086_FMA3815_First anterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "19d779cd97d2fd8233d355204f6a4ccd0aa6802ddd67ffa08a3e72f8fb5452f8"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 198,
+        "triangles": 252
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2692",
+      "available": true,
+      "path": "source-obj/FJ2692.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior interventricular branch of right coronary artery",
+      "bp": "BP21601",
+      "fma": "FMA3840",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-0.896800,-151.046000,1175.880000)-(65.567800,-119.205000,1190.439900)",
+      "boundsMm": {
+        "min": [
+          -0.896807,
+          -151.046,
+          1175.88
+        ],
+        "max": [
+          65.5678,
+          -119.205,
+          1190.44
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2692_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+      "sha256": "79eca3f37e910c11dcd6dc50ba5ea2cf47397f5955d34b338f86047eced667a7",
+      "geometrySha256": "dfd8a00ca6be3a7586c55859a497bcf127a90bda1e908b7e9d3bdee0fb097813",
+      "downloadBytes": 62472,
+      "usableMeshes": 1,
+      "vertices": 608,
+      "faces": 930,
+      "triangles": 930,
+      "mirror": {
+        "path": "meshes/FJ2692_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+        "lfsSha256": "79eca3f37e910c11dcd6dc50ba5ea2cf47397f5955d34b338f86047eced667a7"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 608,
+        "triangles": 930
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2695",
+      "available": true,
+      "path": "source-obj/FJ2695.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior interventricular branch of right coronary artery",
+      "bp": "BP21601",
+      "fma": "FMA3840",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(37.641400,-134.781000,1174.950000)-(46.478500,-128.965000,1178.650000)",
+      "boundsMm": {
+        "min": [
+          37.6414,
+          -134.781,
+          1174.95
+        ],
+        "max": [
+          46.4785,
+          -128.965,
+          1178.65
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2695_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+      "sha256": "1f68d1b2bc899aed07b9cb2aa4abe81a3aef266a3bf59905e9dd57d916826769",
+      "geometrySha256": "b8c7803e5722b128aeee003a08684c16682885fc019a063f3671bd93a01c81ca",
+      "downloadBytes": 15588,
+      "usableMeshes": 1,
+      "vertices": 163,
+      "faces": 236,
+      "triangles": 236,
+      "mirror": {
+        "path": "meshes/FJ2695_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+        "lfsSha256": "1f68d1b2bc899aed07b9cb2aa4abe81a3aef266a3bf59905e9dd57d916826769"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 163,
+        "triangles": 236
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2696",
+      "available": true,
+      "path": "source-obj/FJ2696.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior interventricular branch of right coronary artery",
+      "bp": "BP21601",
+      "fma": "FMA3840",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(17.456600,-153.798000,1177.970000)-(31.578200,-128.465000,1181.300100)",
+      "boundsMm": {
+        "min": [
+          17.4566,
+          -153.798,
+          1177.97
+        ],
+        "max": [
+          31.5782,
+          -128.465,
+          1181.3
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2696_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+      "sha256": "1973fb404a01ba0f265f0a66d286f0b5ba973c9f4d586bf2f02d47f5e9135ba9",
+      "geometrySha256": "6571cf4c94d3d5382a7f7c167122489b698d696df9f02c9e71956ca0bec08e79",
+      "downloadBytes": 26011,
+      "usableMeshes": 1,
+      "vertices": 286,
+      "faces": 336,
+      "triangles": 336,
+      "mirror": {
+        "path": "meshes/FJ2696_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+        "lfsSha256": "1973fb404a01ba0f265f0a66d286f0b5ba973c9f4d586bf2f02d47f5e9135ba9"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 286,
+        "triangles": 336
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2697",
+      "available": true,
+      "path": "source-obj/FJ2697.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior interventricular branch of right coronary artery",
+      "bp": "BP21601",
+      "fma": "FMA3840",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(38.799100,-153.360000,1175.890000)-(41.558300,-140.870000,1178.530000)",
+      "boundsMm": {
+        "min": [
+          38.7991,
+          -153.36,
+          1175.89
+        ],
+        "max": [
+          41.5583,
+          -140.87,
+          1178.53
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2697_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+      "sha256": "284901b570acf2d229ed7eb1670adee03f029bedbe63690f91ef3db51b158c10",
+      "geometrySha256": "4cbdf34fbfe51a7ac3bf2ab80031a7c296e160eafeb63a9b5f3cf96431ed7a68",
+      "downloadBytes": 16991,
+      "usableMeshes": 1,
+      "vertices": 188,
+      "faces": 220,
+      "triangles": 220,
+      "mirror": {
+        "path": "meshes/FJ2697_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+        "lfsSha256": "284901b570acf2d229ed7eb1670adee03f029bedbe63690f91ef3db51b158c10"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 188,
+        "triangles": 220
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2698",
+      "available": true,
+      "path": "source-obj/FJ2698.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior interventricular branch of right coronary artery",
+      "bp": "BP21601",
+      "fma": "FMA3840",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(39.459900,-154.170000,1175.900000)-(45.111400,-145.197000,1178.910000)",
+      "boundsMm": {
+        "min": [
+          39.4599,
+          -154.17,
+          1175.9
+        ],
+        "max": [
+          45.1114,
+          -145.197,
+          1178.91
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2698_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+      "sha256": "48f79bb1d8749bc7653b5b228f35399a4ec58a80a121d88ce133fe8e215d565e",
+      "geometrySha256": "759215f651651f8b0140f928fb49a1b8de0966911bf414903c5ad0ee7418bcef",
+      "downloadBytes": 16844,
+      "usableMeshes": 1,
+      "vertices": 195,
+      "faces": 200,
+      "triangles": 200,
+      "mirror": {
+        "path": "meshes/FJ2698_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+        "lfsSha256": "48f79bb1d8749bc7653b5b228f35399a4ec58a80a121d88ce133fe8e215d565e"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 195,
+        "triangles": 200
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2699",
+      "available": true,
+      "path": "source-obj/FJ2699.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior interventricular branch of right coronary artery",
+      "bp": "BP21601",
+      "fma": "FMA3840",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(60.371600,-153.435000,1177.900000)-(66.878500,-149.881000,1181.470000)",
+      "boundsMm": {
+        "min": [
+          60.3716,
+          -153.435,
+          1177.9
+        ],
+        "max": [
+          66.8785,
+          -149.881,
+          1181.47
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2699_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+      "sha256": "ef325475c48b0e7540bd38b5ed9c71b25f69c91fc72ece91bd3660babf563959",
+      "geometrySha256": "0d2bce07d7f6906f52c089dc33d7dcab0941bb156c2f3825fb5c9de20357af43",
+      "downloadBytes": 10717,
+      "usableMeshes": 1,
+      "vertices": 126,
+      "faces": 126,
+      "triangles": 126,
+      "mirror": {
+        "path": "meshes/FJ2699_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+        "lfsSha256": "ef325475c48b0e7540bd38b5ed9c71b25f69c91fc72ece91bd3660babf563959"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 126,
+        "triangles": 126
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2700",
+      "available": true,
+      "path": "source-obj/FJ2700.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Posterior interventricular branch of right coronary artery",
+      "bp": "BP21601",
+      "fma": "FMA3840",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(56.449900,-155.870000,1177.350000)-(62.739500,-148.287000,1181.490000)",
+      "boundsMm": {
+        "min": [
+          56.4499,
+          -155.87,
+          1177.35
+        ],
+        "max": [
+          62.7395,
+          -148.287,
+          1181.49
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2700_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+      "sha256": "56469da81291c2c43d304f47a368bd1506674bf678de51d84d41a091a355a84d",
+      "geometrySha256": "4a4819b56bef9adb682db09c7f38e1b6157b7b7e512325d11676cbc679df975a",
+      "downloadBytes": 19047,
+      "usableMeshes": 1,
+      "vertices": 197,
+      "faces": 280,
+      "triangles": 280,
+      "mirror": {
+        "path": "meshes/FJ2700_BP21601_FMA3840_Posterior interventricular branch of right coronary artery.obj",
+        "lfsSha256": "56469da81291c2c43d304f47a368bd1506674bf678de51d84d41a091a355a84d"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 197,
+        "triangles": 280
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2714",
+      "available": true,
+      "path": "source-obj/FJ2714.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First posterior ventricular branch of right coronary artery",
+      "bp": "BP21137",
+      "fma": "FMA3837",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(19.339000,-130.561000,1178.000000)-(68.322400,-93.367400,1194.800100)",
+      "boundsMm": {
+        "min": [
+          19.339,
+          -130.561,
+          1178.0
+        ],
+        "max": [
+          68.3224,
+          -93.3674,
+          1194.8
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2714_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+      "sha256": "61c593292292a0cd7d0c8a07e926f5a733a48ef5773f9b8cf655919bfe695e75",
+      "geometrySha256": "d5015b4c7063a9c84a0694ba7a03d8a67125731c38e0f794ce6619132028b1b4",
+      "downloadBytes": 50922,
+      "usableMeshes": 1,
+      "vertices": 482,
+      "faces": 794,
+      "triangles": 794,
+      "mirror": {
+        "path": "meshes/FJ2714_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "61c593292292a0cd7d0c8a07e926f5a733a48ef5773f9b8cf655919bfe695e75"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 482,
+        "triangles": 794
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2715",
+      "available": true,
+      "path": "source-obj/FJ2715.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First posterior ventricular branch of right coronary artery",
+      "bp": "BP21137",
+      "fma": "FMA3837",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(67.565400,-134.496000,1179.750000)-(73.592600,-129.698000,1186.860000)",
+      "boundsMm": {
+        "min": [
+          67.5654,
+          -134.496,
+          1179.75
+        ],
+        "max": [
+          73.5926,
+          -129.698,
+          1186.86
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2715_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+      "sha256": "5ebbf7f842f9d8790b13f8f0b2f31b901eacce297e44d60766e87020214b0a0b",
+      "geometrySha256": "45ef6ce6c2dbe8c2f45165121c6236b84096734a526a1244bfc92f5b60e36db5",
+      "downloadBytes": 16722,
+      "usableMeshes": 1,
+      "vertices": 185,
+      "faces": 218,
+      "triangles": 218,
+      "mirror": {
+        "path": "meshes/FJ2715_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "5ebbf7f842f9d8790b13f8f0b2f31b901eacce297e44d60766e87020214b0a0b"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 185,
+        "triangles": 218
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2716",
+      "available": true,
+      "path": "source-obj/FJ2716.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First posterior ventricular branch of right coronary artery",
+      "bp": "BP21137",
+      "fma": "FMA3837",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(67.552200,-139.107000,1179.650000)-(72.080100,-129.802000,1184.880000)",
+      "boundsMm": {
+        "min": [
+          67.5522,
+          -139.107,
+          1179.65
+        ],
+        "max": [
+          72.0801,
+          -129.802,
+          1184.88
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2716_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+      "sha256": "b452e429f9c1cd8171cf4fbfb467bbf97b919058f4b67e21d068064e941f13af",
+      "geometrySha256": "bec96e1e0dbafec7c29238af419a96a7d3c89879249aea10359ffce2db4a9f2d",
+      "downloadBytes": 17209,
+      "usableMeshes": 1,
+      "vertices": 188,
+      "faces": 232,
+      "triangles": 232,
+      "mirror": {
+        "path": "meshes/FJ2716_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "b452e429f9c1cd8171cf4fbfb467bbf97b919058f4b67e21d068064e941f13af"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 188,
+        "triangles": 232
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2717",
+      "available": true,
+      "path": "source-obj/FJ2717.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First posterior ventricular branch of right coronary artery",
+      "bp": "BP21137",
+      "fma": "FMA3837",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(26.225500,-95.239500,1189.270000)-(42.330100,-88.631700,1195.030000)",
+      "boundsMm": {
+        "min": [
+          26.2255,
+          -95.2395,
+          1189.27
+        ],
+        "max": [
+          42.3301,
+          -88.6317,
+          1195.03
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2717_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+      "sha256": "7b20b0975c0f853fd6312064dad7dc846d59268b3b3fdff093f2782c2a1084aa",
+      "geometrySha256": "51827330af58ac4908a5c7d5e38b7f960115b014a88e4e71559ec1bb1ce77b1c",
+      "downloadBytes": 24493,
+      "usableMeshes": 1,
+      "vertices": 259,
+      "faces": 340,
+      "triangles": 340,
+      "mirror": {
+        "path": "meshes/FJ2717_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "7b20b0975c0f853fd6312064dad7dc846d59268b3b3fdff093f2782c2a1084aa"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 259,
+        "triangles": 340
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2718",
+      "available": true,
+      "path": "source-obj/FJ2718.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First posterior ventricular branch of right coronary artery",
+      "bp": "BP21137",
+      "fma": "FMA3837",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(38.770500,-99.312700,1184.110000)-(44.868700,-95.475500,1188.070000)",
+      "boundsMm": {
+        "min": [
+          38.7705,
+          -99.3127,
+          1184.11
+        ],
+        "max": [
+          44.8687,
+          -95.4755,
+          1188.07
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2718_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+      "sha256": "78f5059663ad69f539b121a4605a65088cda340e5e849f8d542264ce8d37046c",
+      "geometrySha256": "26d752769c744acca45a0508966c205bb93ab552a69f0b7ee84a9523b5138da4",
+      "downloadBytes": 12995,
+      "usableMeshes": 1,
+      "vertices": 139,
+      "faces": 186,
+      "triangles": 186,
+      "mirror": {
+        "path": "meshes/FJ2718_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "78f5059663ad69f539b121a4605a65088cda340e5e849f8d542264ce8d37046c"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 139,
+        "triangles": 186
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2719",
+      "available": true,
+      "path": "source-obj/FJ2719.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First posterior ventricular branch of right coronary artery",
+      "bp": "BP21137",
+      "fma": "FMA3837",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(42.874500,-116.788000,1176.200000)-(46.439800,-104.653000,1181.560100)",
+      "boundsMm": {
+        "min": [
+          42.8745,
+          -116.788,
+          1176.2
+        ],
+        "max": [
+          46.4398,
+          -104.653,
+          1181.56
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2719_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+      "sha256": "627965cba959805ad1e156f5b0ea7737c25c8652aaf2c72785eb9fe31ba2f3e9",
+      "geometrySha256": "32b9a69f4f067e7711bbfdb25770ff36b536daa36410dbb6ba1acc7f10d8cb4d",
+      "downloadBytes": 28208,
+      "usableMeshes": 1,
+      "vertices": 299,
+      "faces": 380,
+      "triangles": 380,
+      "mirror": {
+        "path": "meshes/FJ2719_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "627965cba959805ad1e156f5b0ea7737c25c8652aaf2c72785eb9fe31ba2f3e9"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 299,
+        "triangles": 380
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2720",
+      "available": true,
+      "path": "source-obj/FJ2720.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First posterior ventricular branch of right coronary artery",
+      "bp": "BP21137",
+      "fma": "FMA3837",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(53.370700,-109.305000,1179.910000)-(65.198900,-106.854000,1189.030000)",
+      "boundsMm": {
+        "min": [
+          53.3707,
+          -109.305,
+          1179.91
+        ],
+        "max": [
+          65.1989,
+          -106.854,
+          1189.03
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2720_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+      "sha256": "4239919017c3e5aada9887ae195098d3af01b838b3e88826d9818554b674655d",
+      "geometrySha256": "30ed6aa94a78f3ace210c9573ca358e31de274dc1ff47e6a8370777059079861",
+      "downloadBytes": 22463,
+      "usableMeshes": 1,
+      "vertices": 233,
+      "faces": 320,
+      "triangles": 320,
+      "mirror": {
+        "path": "meshes/FJ2720_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "4239919017c3e5aada9887ae195098d3af01b838b3e88826d9818554b674655d"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 233,
+        "triangles": 320
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2721",
+      "available": true,
+      "path": "source-obj/FJ2721.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First posterior ventricular branch of right coronary artery",
+      "bp": "BP21137",
+      "fma": "FMA3837",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(61.824300,-120.001000,1178.120000)-(72.330100,-115.894000,1189.180100)",
+      "boundsMm": {
+        "min": [
+          61.8243,
+          -120.001,
+          1178.12
+        ],
+        "max": [
+          72.3301,
+          -115.894,
+          1189.18
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2721_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+      "sha256": "8dcceb2631ad48a615be275006de1e813406f51b517f6395f49ea4d0707df17f",
+      "geometrySha256": "754727fb9716f9589c8a4033c9f7e6c403440a6d2126b1891c40ed615f88a74e",
+      "downloadBytes": 18462,
+      "usableMeshes": 1,
+      "vertices": 198,
+      "faces": 256,
+      "triangles": 256,
+      "mirror": {
+        "path": "meshes/FJ2721_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "8dcceb2631ad48a615be275006de1e813406f51b517f6395f49ea4d0707df17f"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 198,
+        "triangles": 256
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2722",
+      "available": true,
+      "path": "source-obj/FJ2722.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "First posterior ventricular branch of right coronary artery",
+      "bp": "BP21137",
+      "fma": "FMA3837",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(60.989600,-134.395000,1175.570000)-(63.524400,-116.931000,1179.070000)",
+      "boundsMm": {
+        "min": [
+          60.9896,
+          -134.395,
+          1175.57
+        ],
+        "max": [
+          63.5244,
+          -116.931,
+          1179.07
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2722_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+      "sha256": "88a858bdffaa26ec0d1c85f9281c0e56f81d1f3203f0a58f49e0528cf172da20",
+      "geometrySha256": "a3960c4ad92efe6fd841321964b479720df8134a56ec6478f6b96ac4f967566d",
+      "downloadBytes": 23219,
+      "usableMeshes": 1,
+      "vertices": 244,
+      "faces": 320,
+      "triangles": 320,
+      "mirror": {
+        "path": "meshes/FJ2722_BP21137_FMA3837_First posterior ventricular branch of right coronary artery.obj",
+        "lfsSha256": "88a858bdffaa26ec0d1c85f9281c0e56f81d1f3203f0a58f49e0528cf172da20"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 244,
+        "triangles": 320
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2723",
+      "available": true,
+      "path": "source-obj/FJ2723.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Trunk of right coronary artery",
+      "bp": "BP20573",
+      "fma": "FMA3802",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-21.747600,-162.494000,1187.939900)-(20.738500,-93.304200,1261.070000)",
+      "boundsMm": {
+        "min": [
+          -21.7476,
+          -162.494,
+          1187.94
+        ],
+        "max": [
+          20.7385,
+          -93.3042,
+          1261.07
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2723_BP20573_FMA3802_Trunk of right coronary artery.obj",
+      "sha256": "641cff7c6ee08e0a78eee7368a0ea3be421c689fd6f289656312b897226d6538",
+      "geometrySha256": "dcc38772636b209e5b541ea9063ed44321c599a5493d4f6c7365bf377ba0b1dc",
+      "downloadBytes": 281250,
+      "usableMeshes": 1,
+      "vertices": 2255,
+      "faces": 4502,
+      "triangles": 4502,
+      "mirror": {
+        "path": "meshes/FJ2723_BP20573_FMA3802_Trunk of right coronary artery.obj",
+        "lfsSha256": "641cff7c6ee08e0a78eee7368a0ea3be421c689fd6f289656312b897226d6538"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 2255,
+        "triangles": 4502
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2737",
+      "available": true,
+      "path": "source-obj/FJ2737.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Trunk of left coronary artery",
+      "bp": "BP24008",
+      "fma": "FMA3855",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(23.389300,-123.425000,1253.950000)-(34.405000,-117.304000,1260.820000)",
+      "boundsMm": {
+        "min": [
+          23.3893,
+          -123.425,
+          1253.95
+        ],
+        "max": [
+          34.405,
+          -117.304,
+          1260.82
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2737_BP24008_FMA3855_Trunk of left coronary artery.obj",
+      "sha256": "b9ad2fdf82c49029a65ab124e98ac8ce8cc58b20b77ce392cfac004d6bbab7b1",
+      "geometrySha256": "c6924eee8f8fc2b12db9f8ac9796b0d3366f69fcb66c52f9d1dbfa1d384becea",
+      "downloadBytes": 12280,
+      "usableMeshes": 1,
+      "vertices": 121,
+      "faces": 204,
+      "triangles": 204,
+      "mirror": {
+        "path": "meshes/FJ2737_BP24008_FMA3855_Trunk of left coronary artery.obj",
+        "lfsSha256": "b9ad2fdf82c49029a65ab124e98ac8ce8cc58b20b77ce392cfac004d6bbab7b1"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 121,
+        "triangles": 204
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2925",
+      "available": true,
+      "path": "source-obj/FJ2925.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Trunk of left superior pulmonary vein",
+      "bp": "BP22893",
+      "fma": "FMA50305",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(34.749400,-99.608000,1251.450000)-(55.167800,-82.123800,1273.220000)",
+      "boundsMm": {
+        "min": [
+          34.7494,
+          -99.608,
+          1251.45
+        ],
+        "max": [
+          55.1678,
+          -82.1238,
+          1273.22
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2925_BP22893_FMA50305_Trunk of left superior pulmonary vein.obj",
+      "sha256": "579561c14121856fb0518e33d97ba7d39a533fa13bfb2931beab1d90e0a08192",
+      "geometrySha256": "f6be177e34b8fa6505453a2597b137e7228085cde34cfd215e17d7f4f8e5ad51",
+      "downloadBytes": 23624,
+      "usableMeshes": 1,
+      "vertices": 209,
+      "faces": 414,
+      "triangles": 414,
+      "mirror": {
+        "path": "meshes/FJ2925_BP22893_FMA50305_Trunk of left superior pulmonary vein.obj",
+        "lfsSha256": "579561c14121856fb0518e33d97ba7d39a533fa13bfb2931beab1d90e0a08192"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2933",
+      "available": true,
+      "path": "source-obj/FJ2933.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Trunk of left superior pulmonary vein",
+      "bp": "BP22893",
+      "fma": "FMA50305",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(33.699800,-110.848000,1218.880000)-(81.816100,-81.547800,1258.090000)",
+      "boundsMm": {
+        "min": [
+          33.6998,
+          -110.848,
+          1218.88
+        ],
+        "max": [
+          81.8161,
+          -81.5478,
+          1258.09
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2933_BP22893_FMA50305_Trunk of left superior pulmonary vein.obj",
+      "sha256": "f5999e21ab13202781be359397d9b78069da0dfba97df702803f5878d7b91330",
+      "geometrySha256": "f52437eae8f1f4eefdf07cbc3a828e64488541f499cd11a81832f70d8b31f015",
+      "downloadBytes": 27104,
+      "usableMeshes": 1,
+      "vertices": 239,
+      "faces": 472,
+      "triangles": 472,
+      "mirror": {
+        "path": "meshes/FJ2933_BP22893_FMA50305_Trunk of left superior pulmonary vein.obj",
+        "lfsSha256": "f5999e21ab13202781be359397d9b78069da0dfba97df702803f5878d7b91330"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2944",
+      "available": true,
+      "path": "source-obj/FJ2944.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Trunk of left inferior pulmonary vein",
+      "bp": "BP22896",
+      "fma": "FMA50306",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(42.633100,-78.017800,1201.540000)-(56.019100,-53.518100,1229.510000)",
+      "boundsMm": {
+        "min": [
+          42.6331,
+          -78.0178,
+          1201.54
+        ],
+        "max": [
+          56.0191,
+          -53.5181,
+          1229.51
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2944_BP22896_FMA50306_Trunk of left inferior pulmonary vein.obj",
+      "sha256": "6e463bf46a0ee86eab57a4456355b64992b6996d5b1dd9a1273c3c1cd521fec8",
+      "geometrySha256": "1723eca7642f784a352a2c8bf4291ee479f5bfc912188432801eb720e9ac2764",
+      "downloadBytes": 17466,
+      "usableMeshes": 1,
+      "vertices": 157,
+      "faces": 310,
+      "triangles": 310,
+      "mirror": {
+        "path": "meshes/FJ2944_BP22896_FMA50306_Trunk of left inferior pulmonary vein.obj",
+        "lfsSha256": "6e463bf46a0ee86eab57a4456355b64992b6996d5b1dd9a1273c3c1cd521fec8"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2950",
+      "available": true,
+      "path": "source-obj/FJ2950.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Trunk of left inferior pulmonary vein",
+      "bp": "BP22896",
+      "fma": "FMA50306",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(37.638400,-83.490300,1210.400000)-(65.363600,-71.841000,1229.820000)",
+      "boundsMm": {
+        "min": [
+          37.6384,
+          -83.4903,
+          1210.4
+        ],
+        "max": [
+          65.3636,
+          -71.841,
+          1229.82
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2950_BP22896_FMA50306_Trunk of left inferior pulmonary vein.obj",
+      "sha256": "7fa6712e3970995e7439eb9888f5bde4886b56cb934ed90407170006a8638fe4",
+      "geometrySha256": "03de60cec0eba7958e7a31d4e277ecd9ec20805625e8a264113e928d243b2e50",
+      "downloadBytes": 18424,
+      "usableMeshes": 1,
+      "vertices": 165,
+      "faces": 326,
+      "triangles": 326,
+      "mirror": {
+        "path": "meshes/FJ2950_BP22896_FMA50306_Trunk of left inferior pulmonary vein.obj",
+        "lfsSha256": "7fa6712e3970995e7439eb9888f5bde4886b56cb934ed90407170006a8638fe4"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2955",
+      "available": true,
+      "path": "source-obj/FJ2955.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Trunk of left inferior pulmonary vein",
+      "bp": "BP22896",
+      "fma": "FMA50306",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(32.848900,-91.316900,1214.120000)-(72.974200,-70.918300,1236.360000)",
+      "boundsMm": {
+        "min": [
+          32.8489,
+          -91.3169,
+          1214.12
+        ],
+        "max": [
+          72.9742,
+          -70.9183,
+          1236.36
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2955_BP22896_FMA50306_Trunk of left inferior pulmonary vein.obj",
+      "sha256": "94b035dd2716a44e963e3b125f938cb1e349562a84448921ca1fb9160f4ffaea",
+      "geometrySha256": "71c3489f68401e7aa19bb0168dbd405bd099d4ed01e3ed90d3d8401b731b47f5",
+      "downloadBytes": 31962,
+      "usableMeshes": 1,
+      "vertices": 280,
+      "faces": 556,
+      "triangles": 556,
+      "mirror": {
+        "path": "meshes/FJ2955_BP22896_FMA50306_Trunk of left inferior pulmonary vein.obj",
+        "lfsSha256": "94b035dd2716a44e963e3b125f938cb1e349562a84448921ca1fb9160f4ffaea"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ2966",
+      "available": true,
+      "path": "source-obj/FJ2966.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Pulmonary trunk",
+      "bp": "BP23682",
+      "fma": "FMA8612",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(11.274700,-158.864000,1256.500000)-(42.075000,-116.516000,1293.610000)",
+      "boundsMm": {
+        "min": [
+          11.2747,
+          -158.864,
+          1256.5
+        ],
+        "max": [
+          42.075,
+          -116.516,
+          1293.61
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ2966_BP23682_FMA8612_Pulmonary trunk.obj",
+      "sha256": "21cd36edc646954c795e8bd658f97448953b3e09d3e0c8b78f78711d7c9ef776",
+      "geometrySha256": "5529579c07c69d3d13a18c9a3cd66121fe1d7b59110bac645f4b5c3cb2c5518c",
+      "downloadBytes": 89276,
+      "usableMeshes": 1,
+      "vertices": 871,
+      "faces": 1302,
+      "triangles": 1302,
+      "mirror": {
+        "path": "meshes/FJ2966_BP23682_FMA8612_Pulmonary trunk.obj",
+        "lfsSha256": "21cd36edc646954c795e8bd658f97448953b3e09d3e0c8b78f78711d7c9ef776"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 871,
+        "triangles": 1302
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ3020",
+      "available": true,
+      "path": "source-obj/FJ3020.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Trunk of right superior pulmonary vein",
+      "bp": "BP23802",
+      "fma": "FMA50302",
+      "mapping": "FMA 3.0 part_of",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-37.140800,-106.536000,1234.930100)-(-14.016400,-88.331300,1261.770000)",
+      "boundsMm": {
+        "min": [
+          -37.1408,
+          -106.536,
+          1234.93
+        ],
+        "max": [
+          -14.0164,
+          -88.3313,
+          1261.77
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ3020_BP23802_FMA50302_Trunk of right superior pulmonary vein.obj",
+      "sha256": "1950414c9d2faa611ad619cd34f4adf658265b3e26146a8c403018c426215f67",
+      "geometrySha256": "0b13071b64016c616ae3a4533ba2c8ef68b51c85616fb94e9907938d29303406",
+      "downloadBytes": 18885,
+      "usableMeshes": 1,
+      "vertices": 171,
+      "faces": 324,
+      "triangles": 324,
+      "mirror": {
+        "path": "meshes/FJ3020_BP23802_FMA50302_Trunk of right superior pulmonary vein.obj",
+        "lfsSha256": "1950414c9d2faa611ad619cd34f4adf658265b3e26146a8c403018c426215f67"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ3040",
+      "available": true,
+      "path": "source-obj/FJ3040.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Trunk of right inferior pulmonary vein",
+      "bp": "BP22871",
+      "fma": "FMA50303",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-33.806800,-89.020500,1211.280000)-(-6.283000,-76.042900,1228.890000)",
+      "boundsMm": {
+        "min": [
+          -33.8068,
+          -89.0205,
+          1211.28
+        ],
+        "max": [
+          -6.28302,
+          -76.0429,
+          1228.89
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ3040_BP22871_FMA50303_Trunk of right inferior pulmonary vein.obj",
+      "sha256": "da6674074ac28a735013aaefa030685719b7fcd61ca787c8f909af7f0a9bc6a3",
+      "geometrySha256": "cde7203c2ef654d5379dde32585e2427fbeca5949ab6abb2811f9d8a548f59a1",
+      "downloadBytes": 11692,
+      "usableMeshes": 1,
+      "vertices": 113,
+      "faces": 196,
+      "triangles": 196,
+      "mirror": {
+        "path": "meshes/FJ3040_BP22871_FMA50303_Trunk of right inferior pulmonary vein.obj",
+        "lfsSha256": "da6674074ac28a735013aaefa030685719b7fcd61ca787c8f909af7f0a9bc6a3"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ3411",
+      "available": true,
+      "path": "source-obj/FJ3411.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Arch of aorta",
+      "bp": "BP23913",
+      "fma": "FMA3768",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-6.830500,-137.163000,1281.900000)-(34.837800,-49.844900,1317.090000)",
+      "boundsMm": {
+        "min": [
+          -6.83046,
+          -137.163,
+          1281.9
+        ],
+        "max": [
+          34.8378,
+          -49.8449,
+          1317.09
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ3411_BP23913_FMA3768_Arch of aorta.obj",
+      "sha256": "6b72258bcc413abbcf6193e11575933d08f3ba960b52a7b8462a7b0ccb4607eb",
+      "geometrySha256": "0575ecea725f54e60750a7c0be8fde25370566fa5ee405379554708ee83d8586",
+      "downloadBytes": 41378,
+      "usableMeshes": 1,
+      "vertices": 381,
+      "faces": 670,
+      "triangles": 670,
+      "mirror": {
+        "path": "meshes/FJ3411_BP23913_FMA3768_Arch of aorta.obj",
+        "lfsSha256": "6b72258bcc413abbcf6193e11575933d08f3ba960b52a7b8462a7b0ccb4607eb"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 381,
+        "triangles": 670
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ3413",
+      "available": true,
+      "path": "source-obj/FJ3413.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Ascending aorta",
+      "bp": "BP20272",
+      "fma": "FMA3736",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-6.822200,-137.439000,1234.060100)-(28.943000,-106.662000,1281.900000)",
+      "boundsMm": {
+        "min": [
+          -6.82218,
+          -137.439,
+          1234.06
+        ],
+        "max": [
+          28.943,
+          -106.662,
+          1281.9
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ3413_BP20272_FMA3736_Ascending aorta.obj",
+      "sha256": "6903aed5746a4e210ebd7c0a15bba69707b2ef29398b97903bc2815c2f82c2bc",
+      "geometrySha256": "de71d6fd57f1d92d6a35eafd41124f2156be9100c6f0e0ec431b83cc5a5039c5",
+      "downloadBytes": 24321,
+      "usableMeshes": 1,
+      "vertices": 229,
+      "faces": 396,
+      "triangles": 396,
+      "mirror": {
+        "path": "meshes/FJ3413_BP20272_FMA3736_Ascending aorta.obj",
+        "lfsSha256": "6903aed5746a4e210ebd7c0a15bba69707b2ef29398b97903bc2815c2f82c2bc"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 229,
+        "triangles": 396
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ3441",
+      "available": true,
+      "path": "source-obj/FJ3441.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Inferior vena cava",
+      "bp": "BP23720",
+      "fma": "FMA10951",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-26.825600,-126.538000,1094.939900)-(-3.969500,-103.552000,1190.530000)",
+      "boundsMm": {
+        "min": [
+          -26.8256,
+          -126.538,
+          1094.94
+        ],
+        "max": [
+          -3.96953,
+          -103.552,
+          1190.53
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ3441_BP23720_FMA10951_Inferior vena cava.obj",
+      "sha256": "22cee979046d6ade5883a10e2eca4b08222403e7e1adf5802973a21ee6b44b97",
+      "geometrySha256": "e06a4a733edd48cf22dba1691b1805d46bab7a1e566fb5af3a41c53113d31ec3",
+      "downloadBytes": 88638,
+      "usableMeshes": 1,
+      "vertices": 793,
+      "faces": 1410,
+      "triangles": 1410,
+      "mirror": {
+        "path": "meshes/FJ3441_BP23720_FMA10951_Inferior vena cava.obj",
+        "lfsSha256": "22cee979046d6ade5883a10e2eca4b08222403e7e1adf5802973a21ee6b44b97"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": null,
+      "sameCountsAsPrevious": false,
+      "medicalReview": "pending"
+    },
+    {
+      "fj": "FJ3645",
+      "available": true,
+      "path": "source-obj/FJ3645.obj",
+      "integrity": {
+        "finiteCoordinates": true,
+        "validFaceVertexReferences": true
+      },
+      "englishName": "Superior vena cava",
+      "bp": "BP23624",
+      "fma": "FMA4720",
+      "mapping": "FMA 3.0 is_a",
+      "compatibilityVersion": null,
+      "unit": "mm",
+      "unitEvidence": "# Bounds(mm) in the downloaded official OBJ header",
+      "headerBoundsMm": "(-26.634900,-127.276000,1274.810100)-(-4.109400,-103.587000,1309.810100)",
+      "boundsMm": {
+        "min": [
+          -26.6349,
+          -127.276,
+          1274.81
+        ],
+        "max": [
+          -4.10943,
+          -103.587,
+          1309.81
+        ]
+      },
+      "sourceUrl": "https://lifesciencedb.jp/bp3d/download.cgi",
+      "archivePath": "heart_official_4_3/FJ3645_BP23624_FMA4720_Superior vena cava.obj",
+      "sha256": "48a2c870ff2dbb3f6eef1817cf0ebf57501c78f0726787d3a40424178095e902",
+      "geometrySha256": "74e7cb1bbdff7bd9d171d1a436d1f52dd8986a55e1b6bece564a9a8f4dc74f58",
+      "downloadBytes": 35843,
+      "usableMeshes": 1,
+      "vertices": 318,
+      "faces": 598,
+      "triangles": 598,
+      "mirror": {
+        "path": "meshes/FJ3645_BP23624_FMA4720_Superior vena cava.obj",
+        "lfsSha256": "48a2c870ff2dbb3f6eef1817cf0ebf57501c78f0726787d3a40424178095e902"
+      },
+      "mirrorPointerDigestMatchesOfficial": true,
+      "oldGeometryCounts": {
+        "vertices": 318,
+        "triangles": 598
+      },
+      "sameCountsAsPrevious": true,
+      "medicalReview": "pending"
+    }
+  ],
+  "unavailablePreviousVersionElements": [
+    "FJ2652",
+    "FJ2693",
+    "FJ2694"
+  ],
+  "excludedDownloadedFiles": [
+    "FJ3659"
+  ]
+}

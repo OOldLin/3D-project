@@ -1,0 +1,9 @@
+{
+  "name": "heart-3d-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "node build.mjs", "check": "node --check src/app.js && node --check build.mjs" },
+  "dependencies": { "three": "0.160.1" },
+  "devDependencies": { "esbuild": "0.25.0" }
+}

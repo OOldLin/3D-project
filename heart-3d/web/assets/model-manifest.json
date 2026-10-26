@@ -1,0 +1,777 @@
+{
+  "dataset": "BodyParts3D",
+  "version": "4.3 · 教学参考",
+  "credit": "BodyParts3D, © The Database Center for Life Science (DBCLS), CC BY-SA 2.1 Japan.",
+  "license": "CC-BY-SA-2.1-JP",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.1/jp/",
+  "sourceStatus": "官方直接下载；84 个源文件哈希与独立镜像指针一致；医学复核待完成",
+  "medicalReview": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "units": {
+    "source": "mm",
+    "scale": 0.02,
+    "displayUnitToMm": 50,
+    "note": "原始 OBJ 文件头标明毫米；显示坐标 1 单位=50 mm；未开放临床测量"
+  },
+  "transform": {
+    "centerMm": [
+      21.5438,
+      -113.22495,
+      1245.64
+    ],
+    "scale": 0.02,
+    "axes": "[x, z, -y]"
+  },
+  "runtime": {
+    "file": "heart-4.3.glb",
+    "bytes": 3586660,
+    "sha256": "87582f55c0520825bb100f352a7e8c56e6998e19734350a6a114f32968b0bb2e"
+  },
+  "modifications": [
+    "按源坐标合并选定部件，未重新简化",
+    "整体居中、坐标轴转换、统一缩放、重算法线",
+    "下腔静脉在原始 z=1150 mm 处截短，保持开口",
+    "显示材质与颜色为示意；当前医学复核未完成"
+  ],
+  "limitations": [
+    "The existing eleven structure groups have the same source element geometry counts in 4.0 and this 4.3 export; this export must not be advertised as higher-resolution solely from its version.",
+    "Ventricular wall remains a combined mesh. No separately modeled atrial/ventricular septum, chordae tendineae, atrial cavity or conduction system was found in the selected manifest.",
+    "Surface cavities are space representations, not myocardium. Valve models are static; motion and hemodynamics are not validated.",
+    "Reference adult male anatomy; medical expert review of this selection and Chinese terminology remains pending."
+  ],
+  "unavailablePreviousVersionElements": [
+    "FJ2652",
+    "FJ2693",
+    "FJ2694"
+  ],
+  "structures": [
+    {
+      "id": "right-atrium",
+      "sourceIds": [
+        "FJ2439"
+      ],
+      "vertices": 9887,
+      "triangles": 17784,
+      "boundsMm": {
+        "min": [
+          -36.3037,
+          -162.645,
+          1183.08
+        ],
+        "max": [
+          6.77791,
+          -96.345,
+          1279.5
+        ]
+      }
+    },
+    {
+      "id": "left-atrium",
+      "sourceIds": [
+        "FJ2438"
+      ],
+      "vertices": 4284,
+      "triangles": 7544,
+      "boundsMm": {
+        "min": [
+          -22.8801,
+          -151.151,
+          1199.43
+        ],
+        "max": [
+          63.2392,
+          -70.1704,
+          1272.4
+        ]
+      }
+    },
+    {
+      "id": "ventricular-wall",
+      "sourceIds": [
+        "FJ2428"
+      ],
+      "vertices": 21053,
+      "triangles": 37442,
+      "boundsMm": {
+        "min": [
+          -23.0179,
+          -176.605,
+          1174.19
+        ],
+        "max": [
+          79.1396,
+          -83.1177,
+          1265.92
+        ]
+      }
+    },
+    {
+      "id": "right-ventricle",
+      "sourceIds": [
+        "FJ2423"
+      ],
+      "vertices": 973,
+      "triangles": 1918,
+      "boundsMm": {
+        "min": [
+          -18.8458,
+          -173.418,
+          1179.48
+        ],
+        "max": [
+          52.6634,
+          -115.195,
+          1260.03
+        ]
+      }
+    },
+    {
+      "id": "left-ventricle",
+      "sourceIds": [
+        "FJ2422"
+      ],
+      "vertices": 879,
+      "triangles": 1722,
+      "boundsMm": {
+        "min": [
+          6.46745,
+          -158.522,
+          1184.07
+        ],
+        "max": [
+          70.2463,
+          -86.4016,
+          1251.55
+        ]
+      }
+    },
+    {
+      "id": "ascending-aorta",
+      "sourceIds": [
+        "FJ3413"
+      ],
+      "vertices": 229,
+      "triangles": 396,
+      "boundsMm": {
+        "min": [
+          -6.82218,
+          -137.439,
+          1234.06
+        ],
+        "max": [
+          28.943,
+          -106.662,
+          1281.9
+        ]
+      }
+    },
+    {
+      "id": "aortic-arch",
+      "sourceIds": [
+        "FJ3411"
+      ],
+      "vertices": 381,
+      "triangles": 670,
+      "boundsMm": {
+        "min": [
+          -6.83046,
+          -137.163,
+          1281.9
+        ],
+        "max": [
+          34.8378,
+          -49.8449,
+          1317.09
+        ]
+      }
+    },
+    {
+      "id": "pulmonary-trunk",
+      "sourceIds": [
+        "FJ2966"
+      ],
+      "vertices": 871,
+      "triangles": 1302,
+      "boundsMm": {
+        "min": [
+          11.2747,
+          -158.864,
+          1256.5
+        ],
+        "max": [
+          42.075,
+          -116.516,
+          1293.61
+        ]
+      }
+    },
+    {
+      "id": "superior-vena-cava",
+      "sourceIds": [
+        "FJ3645"
+      ],
+      "vertices": 318,
+      "triangles": 598,
+      "boundsMm": {
+        "min": [
+          -26.6349,
+          -127.276,
+          1274.81
+        ],
+        "max": [
+          -4.10943,
+          -103.587,
+          1309.81
+        ]
+      }
+    },
+    {
+      "id": "left-coronary",
+      "sourceIds": [
+        "FJ2631",
+        "FJ2632",
+        "FJ2633",
+        "FJ2634",
+        "FJ2635",
+        "FJ2636",
+        "FJ2637",
+        "FJ2638",
+        "FJ2639",
+        "FJ2640",
+        "FJ2641",
+        "FJ2642",
+        "FJ2643",
+        "FJ2644",
+        "FJ2645",
+        "FJ2646",
+        "FJ2647",
+        "FJ2648",
+        "FJ2649",
+        "FJ2650",
+        "FJ2651",
+        "FJ2653",
+        "FJ2654",
+        "FJ2737"
+      ],
+      "vertices": 7768,
+      "triangles": 12358,
+      "boundsMm": {
+        "min": [
+          23.3893,
+          -172.766,
+          1179.45
+        ],
+        "max": [
+          79.3913,
+          -86.9805,
+          1260.82
+        ]
+      }
+    },
+    {
+      "id": "right-coronary",
+      "sourceIds": [
+        "FJ2667",
+        "FJ2668",
+        "FJ2670",
+        "FJ2671",
+        "FJ2672",
+        "FJ2673",
+        "FJ2674",
+        "FJ2675",
+        "FJ2676",
+        "FJ2677",
+        "FJ2692",
+        "FJ2695",
+        "FJ2696",
+        "FJ2697",
+        "FJ2698",
+        "FJ2699",
+        "FJ2700",
+        "FJ2714",
+        "FJ2715",
+        "FJ2716",
+        "FJ2717",
+        "FJ2718",
+        "FJ2719",
+        "FJ2720",
+        "FJ2721",
+        "FJ2722",
+        "FJ2723"
+      ],
+      "vertices": 8736,
+      "triangles": 13492,
+      "boundsMm": {
+        "min": [
+          -21.7476,
+          -176.517,
+          1174.95
+        ],
+        "max": [
+          73.5926,
+          -88.6317,
+          1261.07
+        ]
+      }
+    },
+    {
+      "id": "pulmonary-valve-left-anterior-cusp",
+      "sourceIds": [
+        "FJ2417"
+      ],
+      "vertices": 708,
+      "triangles": 1272,
+      "boundsMm": {
+        "min": [
+          23.1402,
+          -159.581,
+          1244.9
+        ],
+        "max": [
+          40.9215,
+          -139.537,
+          1261.45
+        ]
+      }
+    },
+    {
+      "id": "left-ventricular-anterolateral-papillary-head",
+      "sourceIds": [
+        "FJ2418"
+      ],
+      "vertices": 532,
+      "triangles": 816,
+      "boundsMm": {
+        "min": [
+          31.5447,
+          -160.032,
+          1191.81
+        ],
+        "max": [
+          56.5892,
+          -124.512,
+          1224.65
+        ]
+      }
+    },
+    {
+      "id": "right-ventricular-anterior-papillary-muscle",
+      "sourceIds": [
+        "FJ2419"
+      ],
+      "vertices": 580,
+      "triangles": 882,
+      "boundsMm": {
+        "min": [
+          12.0583,
+          -172.71,
+          1179.8
+        ],
+        "max": [
+          47.1424,
+          -151.131,
+          1209.05
+        ]
+      }
+    },
+    {
+      "id": "mitral-valve-anterior-leaflet",
+      "sourceIds": [
+        "FJ2420"
+      ],
+      "vertices": 4052,
+      "triangles": 7558,
+      "boundsMm": {
+        "min": [
+          11.7217,
+          -141.625,
+          1204.46
+        ],
+        "max": [
+          45.8879,
+          -93.1022,
+          1235.92
+        ]
+      }
+    },
+    {
+      "id": "tricuspid-valve-anterior-leaflet",
+      "sourceIds": [
+        "FJ2421"
+      ],
+      "vertices": 4282,
+      "triangles": 8160,
+      "boundsMm": {
+        "min": [
+          -21.0772,
+          -156.313,
+          1198.11
+        ],
+        "max": [
+          23.2047,
+          -129.198,
+          1236.21
+        ]
+      }
+    },
+    {
+      "id": "aortic-valve-left-posterior-cusp",
+      "sourceIds": [
+        "FJ2426"
+      ],
+      "vertices": 526,
+      "triangles": 914,
+      "boundsMm": {
+        "min": [
+          16.5969,
+          -126.656,
+          1240.7
+        ],
+        "max": [
+          32.3882,
+          -106.41,
+          1255.08
+        ]
+      }
+    },
+    {
+      "id": "pulmonary-valve-posterior-cusp",
+      "sourceIds": [
+        "FJ2427"
+      ],
+      "vertices": 573,
+      "triangles": 996,
+      "boundsMm": {
+        "min": [
+          23.5494,
+          -142.209,
+          1245.19
+        ],
+        "max": [
+          40.5959,
+          -127.603,
+          1261.62
+        ]
+      }
+    },
+    {
+      "id": "left-ventricular-posterior-papillary-muscle",
+      "sourceIds": [
+        "FJ2429"
+      ],
+      "vertices": 487,
+      "triangles": 780,
+      "boundsMm": {
+        "min": [
+          46.4648,
+          -146.92,
+          1188.44
+        ],
+        "max": [
+          74.5404,
+          -104.767,
+          1218.26
+        ]
+      }
+    },
+    {
+      "id": "right-ventricular-posterior-papillary-muscle",
+      "sourceIds": [
+        "FJ2430"
+      ],
+      "vertices": 484,
+      "triangles": 692,
+      "boundsMm": {
+        "min": [
+          7.16454,
+          -160.418,
+          1178.44
+        ],
+        "max": [
+          36.7766,
+          -131.886,
+          1192.79
+        ]
+      }
+    },
+    {
+      "id": "aortic-valve-right-posterior-cusp",
+      "sourceIds": [
+        "FJ2431"
+      ],
+      "vertices": 215,
+      "triangles": 316,
+      "boundsMm": {
+        "min": [
+          5.66774,
+          -123.847,
+          1233.41
+        ],
+        "max": [
+          23.2396,
+          -104.826,
+          1250.52
+        ]
+      }
+    },
+    {
+      "id": "mitral-valve-posterior-leaflet",
+      "sourceIds": [
+        "FJ2432"
+      ],
+      "vertices": 2560,
+      "triangles": 3820,
+      "boundsMm": {
+        "min": [
+          13.5745,
+          -123.267,
+          1199.6
+        ],
+        "max": [
+          62.8543,
+          -85.4446,
+          1231.65
+        ]
+      }
+    },
+    {
+      "id": "tricuspid-valve-posterior-leaflet",
+      "sourceIds": [
+        "FJ2433"
+      ],
+      "vertices": 2729,
+      "triangles": 4926,
+      "boundsMm": {
+        "min": [
+          -18.9578,
+          -145.256,
+          1188.64
+        ],
+        "max": [
+          16.4701,
+          -113.717,
+          1216.2
+        ]
+      }
+    },
+    {
+      "id": "pulmonary-valve-right-anterior-cusp",
+      "sourceIds": [
+        "FJ2434"
+      ],
+      "vertices": 769,
+      "triangles": 1370,
+      "boundsMm": {
+        "min": [
+          8.76793,
+          -156.869,
+          1248.07
+        ],
+        "max": [
+          27.5245,
+          -132.88,
+          1265.27
+        ]
+      }
+    },
+    {
+      "id": "aortic-valve-anterior-cusp",
+      "sourceIds": [
+        "FJ2435"
+      ],
+      "vertices": 508,
+      "triangles": 920,
+      "boundsMm": {
+        "min": [
+          6.99224,
+          -132.441,
+          1234.7
+        ],
+        "max": [
+          26.6562,
+          -118.971,
+          1252.73
+        ]
+      }
+    },
+    {
+      "id": "tricuspid-valve-septal-leaflet",
+      "sourceIds": [
+        "FJ2436"
+      ],
+      "vertices": 2591,
+      "triangles": 4526,
+      "boundsMm": {
+        "min": [
+          -6.484,
+          -137.745,
+          1213.14
+        ],
+        "max": [
+          29.5014,
+          -113.573,
+          1236.48
+        ]
+      }
+    },
+    {
+      "id": "right-ventricular-septal-papillary-muscle",
+      "sourceIds": [
+        "FJ2437"
+      ],
+      "vertices": 539,
+      "triangles": 844,
+      "boundsMm": {
+        "min": [
+          12.8912,
+          -143.599,
+          1213.46
+        ],
+        "max": [
+          32.1741,
+          -128.195,
+          1240.17
+        ]
+      }
+    },
+    {
+      "id": "left-superior-pulmonary-vein",
+      "sourceIds": [
+        "FJ2925",
+        "FJ2933"
+      ],
+      "vertices": 448,
+      "triangles": 886,
+      "boundsMm": {
+        "min": [
+          33.6998,
+          -110.848,
+          1218.88
+        ],
+        "max": [
+          81.8161,
+          -81.5478,
+          1273.22
+        ]
+      }
+    },
+    {
+      "id": "left-inferior-pulmonary-vein",
+      "sourceIds": [
+        "FJ2944",
+        "FJ2950",
+        "FJ2955"
+      ],
+      "vertices": 602,
+      "triangles": 1192,
+      "boundsMm": {
+        "min": [
+          32.8489,
+          -91.3169,
+          1201.54
+        ],
+        "max": [
+          72.9742,
+          -53.5181,
+          1236.36
+        ]
+      }
+    },
+    {
+      "id": "right-superior-pulmonary-vein",
+      "sourceIds": [
+        "FJ3020"
+      ],
+      "vertices": 171,
+      "triangles": 324,
+      "boundsMm": {
+        "min": [
+          -37.1408,
+          -106.536,
+          1234.93
+        ],
+        "max": [
+          -14.0164,
+          -88.3313,
+          1261.77
+        ]
+      }
+    },
+    {
+      "id": "right-inferior-pulmonary-vein",
+      "sourceIds": [
+        "FJ3040"
+      ],
+      "vertices": 113,
+      "triangles": 196,
+      "boundsMm": {
+        "min": [
+          -33.8068,
+          -89.0205,
+          1211.28
+        ],
+        "max": [
+          -6.28302,
+          -76.0429,
+          1228.89
+        ]
+      }
+    },
+    {
+      "id": "inferior-vena-cava-upper-source",
+      "sourceIds": [
+        "FJ3441"
+      ],
+      "vertices": 516,
+      "triangles": 936,
+      "boundsMm": {
+        "min": [
+          -26.8256,
+          -126.538,
+          1150
+        ],
+        "max": [
+          -3.96953,
+          -103.552,
+          1190.53
+        ]
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "name": "心房壁 / 心室壁",
+      "status": "已加载；心室壁左右合并"
+    },
+    {
+      "name": "左右心室腔",
+      "status": "已加载；表面代表腔内空间"
+    },
+    {
+      "name": "四组瓣膜",
+      "status": "11 个静态瓣叶；不含运动"
+    },
+    {
+      "name": "乳头肌",
+      "status": "5 个源模型；非完整瓣膜装置"
+    },
+    {
+      "name": "大血管与肺静脉",
+      "status": "所选片段已加载；末端有截断"
+    },
+    {
+      "name": "冠状动脉",
+      "status": "所选分支；覆盖不完整"
+    },
+    {
+      "name": "独立间隔 / 腱索 / 心房腔",
+      "status": "未包含独立网格"
+    },
+    {
+      "name": "心脏长短轴 / 临床测量",
+      "status": "未标定 / 未开放"
+    }
+  ]
+}

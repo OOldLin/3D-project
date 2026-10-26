@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checkedAt": "2026-10-26T08:17:59.450Z",
+  "structures": 56,
+  "triangles": 419467,
+  "zeroAreaTriangles": 0,
+  "modelSha256": "e11a6fe299862ded261c389affadda9be5b34668612e9a55ed6b0befa29909ff",
+  "generatorSha256": "3f78fd63b0aeaddb208bb61b33e8758f469de082bedfe0d8fa2f1c2108531698",
+  "framingCases": 36,
+  "checks": [
+    "实际 GLTFLoader 解析所有 56 个结构",
+    "模型与生成器哈希",
+    "顶点法线与颜色有限、索引范围和零面积面",
+    "11 瓣叶、4 瓣环、5 乳头肌及5束腱索",
+    "拆分往返、复原和标签锚点",
+    "四种切面及反向半空间",
+    "36组完整/拆分取景",
+    "腔壁隐藏、腔体默认隐藏、单独显示",
+    "结构检索与像素预算",
+    "观察记录往返与无效数据拒绝",
+    "单文件与独立资源一致性",
+    "页面 ID 和第三方库许可",
+    "运行页面无旧模型编号、链接和许可声明"
+  ],
+  "browserQA": "not_completed_tool_startup_failure",
+  "medicalReview": "pending",
+  "limitations": [
+    "参数形态与比例未医学审核",
+    "血管交界未全部贯通",
+    "腱索附着、瓣叶方位和冠状路径为近似",
+    "无临床单位标定"
+  ]
+}

@@ -1,0 +1,717 @@
+[
+  {
+    "id": "right-atrium",
+    "name": "右心房壁",
+    "group": "心脏壁",
+    "en": "HEART WALLS",
+    "color": "#b75f68",
+    "description": "右心房接收从身体返回心脏的血液，再将血液送入右心室。",
+    "note": "这里展示右心房的壁，不包含右心房腔的独立模型。",
+    "english": "Right atrial wall",
+    "abbreviation": "RA",
+    "fma": "FMA9457",
+    "kind": "wall",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA9457"
+    ],
+    "sourceIds": [
+      "FJ2439"
+    ],
+    "sourceName": "Wall of right atrium"
+  },
+  {
+    "id": "left-atrium",
+    "name": "左心房壁",
+    "group": "心脏壁",
+    "en": "HEART WALLS",
+    "color": "#cc7874",
+    "description": "左心房接收从肺部返回的富氧血液，再将血液送入左心室。",
+    "note": "从背面更容易观察。这里展示的是心房壁，模型未包含肺静脉。",
+    "english": "Left atrial wall",
+    "abbreviation": "LA",
+    "fma": "FMA9531",
+    "kind": "wall",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA9531"
+    ],
+    "sourceIds": [
+      "FJ2438"
+    ],
+    "sourceName": "Wall of left atrium"
+  },
+  {
+    "id": "ventricular-wall",
+    "name": "心室壁（左右合并）",
+    "group": "心脏壁",
+    "en": "HEART WALLS",
+    "color": "#b95450",
+    "description": "心室壁中的心肌通过收缩，把心室内的血液泵出心脏。",
+    "note": "源网格将左右心室壁合在一起，不能分别选择。开启“查看内部腔体”会隐藏这层壁。",
+    "english": "Ventricular wall",
+    "abbreviation": "",
+    "fma": "FMA13884",
+    "kind": "wall",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA13884"
+    ],
+    "sourceIds": [
+      "FJ2428"
+    ],
+    "sourceName": "Wall of ventricle"
+  },
+  {
+    "id": "right-ventricle",
+    "name": "右心室腔",
+    "group": "内部腔体",
+    "en": "INNER SPACES",
+    "color": "#5c94bb",
+    "description": "右心室内的空间。右心室收缩后，血液经肺动脉方向流向肺部。",
+    "note": "这是腔内空间的表面示意，不是心室肌肉。完整观察时选择会隐藏心室壁；也可单独查看。",
+    "english": "Right ventricular cavity",
+    "abbreviation": "RV",
+    "fma": "FMA9291",
+    "kind": "cavity",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA9291"
+    ],
+    "sourceIds": [
+      "FJ2423"
+    ],
+    "sourceName": "Cavity of right ventricle"
+  },
+  {
+    "id": "left-ventricle",
+    "name": "左心室腔",
+    "group": "内部腔体",
+    "en": "INNER SPACES",
+    "color": "#e99177",
+    "description": "左心室内的空间。左心室将血液泵入主动脉，送往身体各处。",
+    "note": "这是腔内空间的表面示意，不是心室肌肉。完整观察时选择会隐藏心室壁；也可单独查看。",
+    "english": "Left ventricular cavity",
+    "abbreviation": "LV",
+    "fma": "FMA9466",
+    "kind": "cavity",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA9466"
+    ],
+    "sourceIds": [
+      "FJ2422"
+    ],
+    "sourceName": "Cavity of left ventricle"
+  },
+  {
+    "id": "ascending-aorta",
+    "name": "升主动脉",
+    "group": "大血管",
+    "en": "GREAT VESSELS",
+    "color": "#d67261",
+    "description": "主动脉从左心室接收血液。升主动脉是它向上走行的部分。",
+    "note": "这里只包含升主动脉段。红色用来帮助辨认结构，不表示组织真实颜色。",
+    "english": "Ascending aorta",
+    "abbreviation": "AAo",
+    "fma": "FMA3736",
+    "kind": "vessel",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA3736"
+    ],
+    "sourceIds": [
+      "FJ3413"
+    ],
+    "sourceName": "Ascending aorta"
+  },
+  {
+    "id": "aortic-arch",
+    "name": "主动脉弓",
+    "group": "大血管",
+    "en": "GREAT VESSELS",
+    "color": "#e98c73",
+    "description": "主动脉向上走行后形成弯曲的弓形部分，将血液继续送向身体。",
+    "note": "模型只包含弓部，未包含完整的分支血管和降主动脉。",
+    "english": "Aortic arch",
+    "abbreviation": "Ao arch",
+    "fma": "FMA3768",
+    "kind": "vessel",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA3768"
+    ],
+    "sourceIds": [
+      "FJ3411"
+    ],
+    "sourceName": "Arch of aorta"
+  },
+  {
+    "id": "pulmonary-trunk",
+    "name": "肺动脉干",
+    "group": "大血管",
+    "en": "GREAT VESSELS",
+    "color": "#6597b6",
+    "description": "肺动脉干接收从右心室泵出的血液，将血液送向肺部。",
+    "note": "只包含主干，未包含完整的左右肺动脉分支。蓝色是结构辨认用的示意色。",
+    "english": "Pulmonary trunk",
+    "abbreviation": "PT",
+    "fma": "FMA8612",
+    "kind": "vessel",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA8612"
+    ],
+    "sourceIds": [
+      "FJ2966"
+    ],
+    "sourceName": "Pulmonary trunk"
+  },
+  {
+    "id": "superior-vena-cava",
+    "name": "上腔静脉",
+    "group": "大血管",
+    "en": "GREAT VESSELS",
+    "color": "#87a6c4",
+    "description": "上腔静脉将上半身返回的血液输送到右心房。",
+    "note": "本模型省略了下腔静脉，血管末端经过截断。",
+    "english": "Superior vena cava",
+    "abbreviation": "SVC",
+    "fma": "FMA4720",
+    "kind": "vessel",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA4720"
+    ],
+    "sourceIds": [
+      "FJ3645"
+    ],
+    "sourceName": "Superior vena cava"
+  },
+  {
+    "id": "left-coronary",
+    "name": "左冠状动脉分支组",
+    "group": "冠状动脉",
+    "en": "CORONARY ARTERIES",
+    "color": "#dfb180",
+    "description": "冠状动脉为心肌自身供应血液。左冠状动脉及其分支分布在心脏表面。",
+    "note": "所选源分支合并展示，不代表完整冠状动脉树。旧版的 3 个分支片段未纳入本次 4.3 数据，详见来源清单。",
+    "english": "Left coronary artery tree",
+    "abbreviation": "LCA",
+    "fma": "FMA50040",
+    "kind": "coronary",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA74912",
+      "FMA3872",
+      "FMA3860",
+      "FMA3876",
+      "FMA3868",
+      "FMA3874",
+      "FMA3895",
+      "FMA3855"
+    ],
+    "sourceIds": [
+      "FJ2631",
+      "FJ2632",
+      "FJ2633",
+      "FJ2634",
+      "FJ2635",
+      "FJ2636",
+      "FJ2637",
+      "FJ2638",
+      "FJ2639",
+      "FJ2640",
+      "FJ2641",
+      "FJ2642",
+      "FJ2643",
+      "FJ2644",
+      "FJ2645",
+      "FJ2646",
+      "FJ2647",
+      "FJ2648",
+      "FJ2649",
+      "FJ2650",
+      "FJ2651",
+      "FJ2653",
+      "FJ2654",
+      "FJ2737"
+    ],
+    "sourceName": "Trunk of anterior interventricular branch of left coronary artery"
+  },
+  {
+    "id": "right-coronary",
+    "name": "右冠状动脉分支组",
+    "group": "冠状动脉",
+    "en": "CORONARY ARTERIES",
+    "color": "#d4a273",
+    "description": "右冠状动脉及其分支为部分心房和心室的心肌供应血液。",
+    "note": "所选源分支合并展示，不代表完整冠状动脉树。旧版的 3 个分支片段未纳入本次 4.3 数据，详见来源清单。",
+    "english": "Right coronary artery tree",
+    "abbreviation": "RCA",
+    "fma": "FMA50039",
+    "kind": "coronary",
+    "review": "pending",
+    "sourceFmaIds": [
+      "FMA3818",
+      "FMA3807",
+      "FMA3815",
+      "FMA3840",
+      "FMA3837",
+      "FMA3802"
+    ],
+    "sourceIds": [
+      "FJ2667",
+      "FJ2668",
+      "FJ2670",
+      "FJ2671",
+      "FJ2672",
+      "FJ2673",
+      "FJ2674",
+      "FJ2675",
+      "FJ2676",
+      "FJ2677",
+      "FJ2692",
+      "FJ2695",
+      "FJ2696",
+      "FJ2697",
+      "FJ2698",
+      "FJ2699",
+      "FJ2700",
+      "FJ2714",
+      "FJ2715",
+      "FJ2716",
+      "FJ2717",
+      "FJ2718",
+      "FJ2719",
+      "FJ2720",
+      "FJ2721",
+      "FJ2722",
+      "FJ2723"
+    ],
+    "sourceName": "Marginal branch of right coronary artery"
+  },
+  {
+    "id": "pulmonary-valve-left-anterior-cusp",
+    "name": "肺动脉瓣左前瓣",
+    "english": "Left anterior cusp of pulmonary valve",
+    "abbreviation": "PV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7247",
+    "sourceFmaIds": [
+      "FMA7247"
+    ],
+    "sourceIds": [
+      "FJ2417"
+    ],
+    "review": "pending",
+    "sourceName": "Left anterior cusp of pulmonary valve"
+  },
+  {
+    "id": "left-ventricular-anterolateral-papillary-head",
+    "name": "左心室外侧乳头肌前外侧头",
+    "english": "Anterolateral head of lateral papillary muscle of left ventricle",
+    "abbreviation": "PM",
+    "group": "乳头肌",
+    "color": "#c97d6c",
+    "description": "展示源数据中的乳头肌结构。可单独查看其位置与形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "papillary",
+    "fma": "FMA7265",
+    "sourceFmaIds": [
+      "FMA7265"
+    ],
+    "sourceIds": [
+      "FJ2418"
+    ],
+    "review": "pending",
+    "sourceName": "Anterolateral head of lateral papillary muscle of left ventricle"
+  },
+  {
+    "id": "right-ventricular-anterior-papillary-muscle",
+    "name": "右心室前乳头肌",
+    "english": "Anterior papillary muscle of right ventricle",
+    "abbreviation": "PM",
+    "group": "乳头肌",
+    "color": "#c97d6c",
+    "description": "展示源数据中的乳头肌结构。可单独查看其位置与形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "papillary",
+    "fma": "FMA7260",
+    "sourceFmaIds": [
+      "FMA7260"
+    ],
+    "sourceIds": [
+      "FJ2419"
+    ],
+    "review": "pending",
+    "sourceName": "Anterior papillary muscle of right ventricle"
+  },
+  {
+    "id": "mitral-valve-anterior-leaflet",
+    "name": "二尖瓣前叶",
+    "english": "Anterior leaflet of mitral valve",
+    "abbreviation": "MV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7242",
+    "sourceFmaIds": [
+      "FMA7242"
+    ],
+    "sourceIds": [
+      "FJ2420"
+    ],
+    "review": "pending",
+    "sourceName": "Anterior leaflet of mitral valve"
+  },
+  {
+    "id": "tricuspid-valve-anterior-leaflet",
+    "name": "三尖瓣前叶",
+    "english": "Anterior leaflet of tricuspid valve",
+    "abbreviation": "TV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7238",
+    "sourceFmaIds": [
+      "FMA7238"
+    ],
+    "sourceIds": [
+      "FJ2421"
+    ],
+    "review": "pending",
+    "sourceName": "Anterior leaflet of tricuspid valve"
+  },
+  {
+    "id": "aortic-valve-left-posterior-cusp",
+    "name": "主动脉瓣左后瓣",
+    "english": "Left posterior cusp of aortic valve",
+    "abbreviation": "AV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7254",
+    "sourceFmaIds": [
+      "FMA7254"
+    ],
+    "sourceIds": [
+      "FJ2426"
+    ],
+    "review": "pending",
+    "sourceName": "Left posterior cusp of aortic valve"
+  },
+  {
+    "id": "pulmonary-valve-posterior-cusp",
+    "name": "肺动脉瓣后瓣",
+    "english": "Posterior cusp of pulmonary valve",
+    "abbreviation": "PV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7250",
+    "sourceFmaIds": [
+      "FMA7250"
+    ],
+    "sourceIds": [
+      "FJ2427"
+    ],
+    "review": "pending",
+    "sourceName": "Posterior cusp of pulmonary valve"
+  },
+  {
+    "id": "left-ventricular-posterior-papillary-muscle",
+    "name": "左心室后乳头肌",
+    "english": "Posterior papillary muscle of left ventricle",
+    "abbreviation": "PM",
+    "group": "乳头肌",
+    "color": "#c97d6c",
+    "description": "展示源数据中的乳头肌结构。可单独查看其位置与形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "papillary",
+    "fma": "FMA7266",
+    "sourceFmaIds": [
+      "FMA7266"
+    ],
+    "sourceIds": [
+      "FJ2429"
+    ],
+    "review": "pending",
+    "sourceName": "Posterior papillary muscle of left ventricle"
+  },
+  {
+    "id": "right-ventricular-posterior-papillary-muscle",
+    "name": "右心室后乳头肌",
+    "english": "Posterior papillary muscle of right ventricle",
+    "abbreviation": "PM",
+    "group": "乳头肌",
+    "color": "#c97d6c",
+    "description": "展示源数据中的乳头肌结构。可单独查看其位置与形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "papillary",
+    "fma": "FMA7261",
+    "sourceFmaIds": [
+      "FMA7261"
+    ],
+    "sourceIds": [
+      "FJ2430"
+    ],
+    "review": "pending",
+    "sourceName": "Posterior papillary muscle of right ventricle"
+  },
+  {
+    "id": "aortic-valve-right-posterior-cusp",
+    "name": "主动脉瓣右后瓣",
+    "english": "Right posterior cusp of aortic valve",
+    "abbreviation": "AV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7252",
+    "sourceFmaIds": [
+      "FMA7252"
+    ],
+    "sourceIds": [
+      "FJ2431"
+    ],
+    "review": "pending",
+    "sourceName": "Right posterior cusp of aortic valve"
+  },
+  {
+    "id": "mitral-valve-posterior-leaflet",
+    "name": "二尖瓣后叶",
+    "english": "Posterior leaflet of mitral valve",
+    "abbreviation": "MV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7243",
+    "sourceFmaIds": [
+      "FMA7243"
+    ],
+    "sourceIds": [
+      "FJ2432"
+    ],
+    "review": "pending",
+    "sourceName": "Posterior leaflet of mitral valve"
+  },
+  {
+    "id": "tricuspid-valve-posterior-leaflet",
+    "name": "三尖瓣后叶",
+    "english": "Posterior leaflet of tricuspid valve",
+    "abbreviation": "TV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7239",
+    "sourceFmaIds": [
+      "FMA7239"
+    ],
+    "sourceIds": [
+      "FJ2433"
+    ],
+    "review": "pending",
+    "sourceName": "Posterior leaflet of tricuspid valve"
+  },
+  {
+    "id": "pulmonary-valve-right-anterior-cusp",
+    "name": "肺动脉瓣右前瓣",
+    "english": "Right anterior cusp of pulmonary valve",
+    "abbreviation": "PV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7249",
+    "sourceFmaIds": [
+      "FMA7249"
+    ],
+    "sourceIds": [
+      "FJ2434"
+    ],
+    "review": "pending",
+    "sourceName": "Right anterior cusp of pulmonary valve"
+  },
+  {
+    "id": "aortic-valve-anterior-cusp",
+    "name": "主动脉瓣前瓣",
+    "english": "Anterior cusp of aortic valve",
+    "abbreviation": "AV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7253",
+    "sourceFmaIds": [
+      "FMA7253"
+    ],
+    "sourceIds": [
+      "FJ2435"
+    ],
+    "review": "pending",
+    "sourceName": "Anterior cusp of aortic valve"
+  },
+  {
+    "id": "tricuspid-valve-septal-leaflet",
+    "name": "三尖瓣隔叶",
+    "english": "Septal leaflet of tricuspid valve",
+    "abbreviation": "TV",
+    "group": "瓣叶",
+    "color": "#ddc49e",
+    "description": "展示源数据中的静态瓣叶表面。可使用剖切、隐藏外壁或单独查看观察形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "valve",
+    "fma": "FMA7240",
+    "sourceFmaIds": [
+      "FMA7240"
+    ],
+    "sourceIds": [
+      "FJ2436"
+    ],
+    "review": "pending",
+    "sourceName": "Septal leaflet of tricuspid valve"
+  },
+  {
+    "id": "right-ventricular-septal-papillary-muscle",
+    "name": "右心室隔乳头肌",
+    "english": "Septal papillary muscle of right ventricle",
+    "abbreviation": "PM",
+    "group": "乳头肌",
+    "color": "#c97d6c",
+    "description": "展示源数据中的乳头肌结构。可单独查看其位置与形态。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "papillary",
+    "fma": "FMA7262",
+    "sourceFmaIds": [
+      "FMA7262"
+    ],
+    "sourceIds": [
+      "FJ2437"
+    ],
+    "review": "pending",
+    "sourceName": "Septal papillary muscle of right ventricle"
+  },
+  {
+    "id": "left-superior-pulmonary-vein",
+    "name": "左上肺静脉主干",
+    "english": "Trunk of left superior pulmonary vein",
+    "abbreviation": "LSPV",
+    "group": "静脉",
+    "color": "#869fba",
+    "description": "展示源数据选取的静脉主干或靠近心脏的片段，末端可能截断。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "vessel",
+    "fma": "FMA50305",
+    "sourceFmaIds": [
+      "FMA50305"
+    ],
+    "sourceIds": [
+      "FJ2925",
+      "FJ2933"
+    ],
+    "review": "pending",
+    "sourceName": "Trunk of left superior pulmonary vein"
+  },
+  {
+    "id": "left-inferior-pulmonary-vein",
+    "name": "左下肺静脉主干",
+    "english": "Trunk of left inferior pulmonary vein",
+    "abbreviation": "LIPV",
+    "group": "静脉",
+    "color": "#869fba",
+    "description": "展示源数据选取的静脉主干或靠近心脏的片段，末端可能截断。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "vessel",
+    "fma": "FMA50306",
+    "sourceFmaIds": [
+      "FMA50306"
+    ],
+    "sourceIds": [
+      "FJ2944",
+      "FJ2950",
+      "FJ2955"
+    ],
+    "review": "pending",
+    "sourceName": "Trunk of left inferior pulmonary vein"
+  },
+  {
+    "id": "right-superior-pulmonary-vein",
+    "name": "右上肺静脉主干",
+    "english": "Trunk of right superior pulmonary vein",
+    "abbreviation": "RSPV",
+    "group": "静脉",
+    "color": "#869fba",
+    "description": "展示源数据选取的静脉主干或靠近心脏的片段，末端可能截断。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "vessel",
+    "fma": "FMA50302",
+    "sourceFmaIds": [
+      "FMA50302"
+    ],
+    "sourceIds": [
+      "FJ3020"
+    ],
+    "review": "pending",
+    "sourceName": "Trunk of right superior pulmonary vein"
+  },
+  {
+    "id": "right-inferior-pulmonary-vein",
+    "name": "右下肺静脉主干",
+    "english": "Trunk of right inferior pulmonary vein",
+    "abbreviation": "RIPV",
+    "group": "静脉",
+    "color": "#869fba",
+    "description": "展示源数据选取的静脉主干或靠近心脏的片段，末端可能截断。",
+    "note": "名称沿用源数据的方位命名；中文名称及解剖关系待医学专业人员复核。",
+    "kind": "vessel",
+    "fma": "FMA50303",
+    "sourceFmaIds": [
+      "FMA50303"
+    ],
+    "sourceIds": [
+      "FJ3040"
+    ],
+    "review": "pending",
+    "sourceName": "Trunk of right inferior pulmonary vein"
+  },
+  {
+    "id": "inferior-vena-cava-upper-source",
+    "name": "下腔静脉近心段",
+    "english": "Inferior vena cava, selected proximal segment",
+    "abbreviation": "IVC",
+    "group": "静脉",
+    "color": "#869fba",
+    "description": "展示源数据选取的静脉主干或靠近心脏的片段，末端可能截断。",
+    "note": "源文件在原始坐标 z=1150 mm 处人工截短；保持开口，不补面。",
+    "kind": "vessel",
+    "fma": "FMA10951",
+    "sourceFmaIds": [
+      "FMA10951"
+    ],
+    "sourceIds": [
+      "FJ3441"
+    ],
+    "review": "pending",
+    "sourceName": "Inferior vena cava"
+  }
+]

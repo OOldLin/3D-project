@@ -1,0 +1,26 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { fileURLToPath } from 'node:url';
+import { build } from 'esbuild';
+
+const root=path.dirname(fileURLToPath(import.meta.url));
+const assetDirectory=path.join(root,'assets/original');
+const metadata=JSON.parse(await fs.readFile(path.join(assetDirectory,'model-manifest.json'),'utf8'));
+const model=await fs.readFile(path.join(assetDirectory,metadata.runtime.file));
+const checksum=crypto.createHash('sha256').update(model).digest('hex');
+if(checksum!==metadata.runtime.sha256)throw new Error('模型与来源清单校验和不一致。');
+const result=await build({entryPoints:[path.join(root,'src/app.js')],bundle:true,minify:true,format:'iife',platform:'browser',target:['chrome100','edge100','safari15.4'],write:false,legalComments:'inline'});
+const [template,style,notices,license]=await Promise.all([fs.readFile(path.join(root,'src/index.template.html'),'utf8'),fs.readFile(path.join(root,'src/styles.css'),'utf8'),fs.readFile(path.join(root,'THIRD-PARTY-NOTICES.txt'),'utf8'),fs.readFile(path.join(root,'vendor/THREE-LICENSE.txt'),'utf8')]);
+const script=result.outputFiles[0].text.replace(/<\/script/gi,'<\\/script');
+const metadataText=JSON.stringify(metadata).replace(/</g,'\\u003c');
+const base=template.replace('<head>',()=>`<head>\n<!--\n${notices}\n${license}\n-->`).replace('__MODEL_METADATA__',()=>metadataText);
+const standalone=base.replace('/*__STYLE__*/',()=>style).replace('__MODEL_BASE64__',()=>model.toString('base64')).replace('/*__APP__*/',()=>script);
+if(/__MODEL_BASE64__|__MODEL_METADATA__|\/\*__APP__\*\/|\/\*__STYLE__\*\//.test(standalone))throw new Error('页面模板替换不完整。');
+await fs.writeFile(path.join(root,'index.html'),standalone,'utf8');
+const web=path.join(root,'web');await fs.mkdir(path.join(web,'assets'),{recursive:true});
+const site=base.replace('<style>/*__STYLE__*/</style>','<link rel="stylesheet" href="./styles.css">').replace('<script id="heart-model" type="application/octet-stream">__MODEL_BASE64__</script>','<script id="heart-model" type="application/octet-stream" data-src="./assets/heart-original.glb"></script>').replace('<script>/*__APP__*/</script>','<script src="./app.js"></script>');
+await Promise.all([fs.writeFile(path.join(web,'index.html'),site,'utf8'),fs.writeFile(path.join(web,'app.js'),script,'utf8'),fs.writeFile(path.join(web,'styles.css'),style,'utf8'),fs.writeFile(path.join(web,'assets/heart-original.glb'),model),fs.writeFile(path.join(web,'assets/model-manifest.json'),JSON.stringify(metadata,null,2),'utf8'),fs.writeFile(path.join(web,'THIRD-PARTY-NOTICES.txt'),`${notices}\n\n${license}`,'utf8')]);
+console.log(`离线成品：${path.join(root,'index.html')}（${(Buffer.byteLength(standalone)/1048576).toFixed(2)} MiB）`);
+console.log(`独立资源网页：${web}`);
+console.log(`模型结构：${metadata.structures.length}；SHA-256：${checksum}`);

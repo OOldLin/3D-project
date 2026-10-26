@@ -1,0 +1,54 @@
+当前专业版心脏模型
+BodyParts3D, © The Database Center for Life Science (DBCLS), licensed under CC BY-SA 2.1 Japan.
+https://creativecommons.org/licenses/by-sa/2.1/jp/
+官方来源：https://lifesciencedb.jp/bp3d/
+官方在线许可：https://lifesciencedb.jp/bp3d/info_en/license/index.html
+
+本次从官方4.3版本选择的84个OBJ生成32个可选择展示组。源坐标单位为毫米。
+本项目转换：按源坐标合并选定部件；居中；[x,z,-y]轴向转换；统一缩放0.02；重算法线；转换GLB。未进一步简化，不添加虚构组织。
+下腔静脉FJ3441仅保留源坐标z≥1150 mm的近心部分，人工截断保持开口，不补面。
+显示材质、颜色、灯光、拆分位置和简化演示动画由本项目设置，非源数据的真实组织颜色或生理运动。
+派生模型及其派生图像保留上述署名、许可链接、修改说明，并按CC BY-SA 2.1 Japan分享。
+官方源网格校验值、版本清单及映射：assets/professional/source-map.json。
+说明与边界：assets/professional/SOURCE-NOTES.md。
+医学复核尚未完成，DBCLS未为本展示背书。
+
+保留供对照的旧版4.0模型
+assets/heart.glb由OrganUI整理，固定提交c72ce6654ff8e282942f97750d3104f55ef4fc3d。
+BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International.
+其许可依据为官方Archive当前许可：https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html
+https://github.com/organui/heart-3d
+4.0旧模型和4.3在线数据分别记录许可，不混用。
+
+Three.js 0.160.1
+Copyright © 2010-2023 three.js authors
+MIT License
+完整许可在vendor/THREE-LICENSE.txt，离线HTML及web发行目录也内含完整许可。
+
+esbuild 0.25.0
+Copyright (c) 2020 Evan Wallace
+MIT License，仅用于构建。
+完整许可在vendor/ESBUILD-LICENSE.txt。
+
+
+The MIT License
+
+Copyright © 2010-2023 three.js authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

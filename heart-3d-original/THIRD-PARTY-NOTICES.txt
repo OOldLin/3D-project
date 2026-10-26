@@ -1,0 +1,14 @@
+本项目模型与依赖说明
+
+本次心脏网格由 scripts/generate-model.mjs 内的曲面公式和手工控制点生成。
+生成器不读取 BodyParts3D、下载模型、医学影像、外部贴图或第三方解剖网格。
+本声明记录生成过程，不保证模型的医学准确性，也不替代商用权利审查。
+保留建模源文件、版本与参考资料；外包后续加工时应明确权利归属。
+
+网页继续使用 Three.js 0.160.1（包括 GLTFLoader、OrbitControls、RoomEnvironment）和其几何工具。
+Three.js 采用 MIT 许可；完整版权与许可见 vendor/THREE-LICENSE.txt，构建时也嵌入 HTML。
+开发构建依赖 esbuild，其许可证随安装包保留。
+
+解剖知识参考（仅用于结构知识核对，不复制文字、图像或模型）：
+https://www.nhlbi.nih.gov/health/heart/anatomy
+https://www.vhlab.umn.edu/atlas/comparative-anatomy-tutorial/ventricles.shtml
