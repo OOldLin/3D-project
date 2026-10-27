@@ -2,7 +2,7 @@
 
 一个交互式 3D 网页项目集合：
 
-- **汽车发动机 3D 智能剖视** —— 本仓库首页 `index.html`
+- **汽车发动机 3D 智能剖视** —— 独立目录 [`engine-3d/`](engine-3d/)，入口为 [`engine-3d/index.html`](engine-3d/index.html)
 - **心脏 3D 解剖** —— 原有项目，保留在 [`heart-3d/`](heart-3d/) 和 [`heart-3d-original/`](heart-3d-original/) 中
 
 ---
@@ -11,18 +11,18 @@
 
 一个可交互的汽车直列四缸涡轮增压发动机 3D 网页。以奶油纸色、鼠尾草绿和低多边形等距场景为视觉语言，结合实时机械运动、能源数据与物理/化学知识面板。
 
-页面是**单文件、离线可用**的：Three.js、CSS 和交互脚本已全部内联到 `index.html`，不依赖 CDN 或后端。
+页面是**单文件、离线可用**的：Three.js、CSS 和交互脚本已全部内联到 `engine-3d/index.html`，不依赖 CDN 或后端。
 
 ### 预览
 
 #### 主界面
-![主界面](assets/preview.png)
+![主界面](engine-3d/assets/preview.png)
 
 #### 点火与燃烧爆炸
-![燃烧效果](assets/preview-combustion.png)
+![燃烧效果](engine-3d/assets/preview-combustion.png)
 
 #### 物化知识面板
-![物化知识](assets/preview-science.png)
+![物化知识](engine-3d/assets/preview-science.png)
 
 ### 功能
 
@@ -59,11 +59,11 @@
 - Three.js r160 + WebGL
 - 程序化几何建模与 Canvas 纹理，没有外部 3D 模型或贴图
 - `requestAnimationFrame` 驱动机械、燃烧与 p–V 标记动画
-- 单文件离线构建：`src/build.py` 将样式、脚本和 Three.js 内联到 `index.html`
+- 单文件离线构建：`engine-3d/src/build.py` 将样式、脚本和 Three.js 内联到 `engine-3d/index.html`
 
 ### 本地运行
 
-直接双击 `index.html` 即可。
+直接双击 `engine-3d/index.html` 即可。
 
 如果浏览器对本地文件有限制，也可以起一个静态服务器：
 
@@ -71,42 +71,39 @@
 python -m http.server 8000
 ```
 
-然后打开 <http://localhost:8000>。
+然后打开 <http://localhost:8000/engine-3d/>。
 
 ### 目录结构
 
 ```text
 .
-├─ index.html                 # 可直接部署的完整单文件页面
-├─ assets/                    # README 预览图
-├─ src/
-│  ├─ engine-3d.src.html      # 可编辑 HTML 源文件
-│  ├─ engine-3d.css
-│  ├─ engine-3d.js
-│  ├─ build.py                # 重新生成根目录 index.html
-│  └─ vendor/three.min.js     # Three.js r160
-├─ heart-3d/                  # 原仓库保留的心脏 3D 项目
-├─ heart-3d-original/         # 原仓库保留的原始版本
+├─ engine-3d/                 # 完整发动机项目
+│  ├─ index.html              # 发动机页面入口
+│  ├─ assets/                 # 预览图片
+│  ├─ src/                    # 源码和构建脚本
+│  └─ README.md               # 发动机项目说明
+├─ heart-3d/                  # 心脏 3D 项目
+├─ heart-3d-original/         # 心脏 3D 原始版本
 ├─ .nojekyll
 └─ README.md
 ```
 
 ### 修改源码
 
-编辑 `src/` 下的文件后，在项目根目录运行：
+编辑 `engine-3d/src/` 下的文件后，在项目根目录运行：
 
 ```bash
-python src/build.py
+python engine-3d/src/build.py
 ```
 
-即可重新生成自包含的 `index.html`。
+即可重新生成自包含的 `engine-3d/index.html`。
 
 ### 部署到 GitHub Pages
 
 1. 打开仓库 **Settings → Pages**。
 2. Source 选择 **Deploy from a branch**。
 3. Branch 选择 `main`，目录选择 `/ (root)`，保存。
-4. 页面会发布在 `https://<用户名>.github.io/<仓库名>/`。
+4. 页面会发布在 `https://<用户名>.github.io/<仓库名>/engine-3d/`。
 
 ## 其他项目
 
@@ -120,6 +117,6 @@ python src/build.py
 
 ## 说明
 
-- Three.js 以 MIT License 内联；其版权声明保留在 `index.html` 和 `src/vendor/three.min.js` 中。
+- Three.js 以 MIT License 内联；其版权声明保留在 `engine-3d/index.html` 和 `engine-3d/src/vendor/three.min.js` 中。
 - 本项目未附项目级开源许可证。如果打算公开发布并允许他人复用，建议补充 MIT 或其他许可证。
 - 发动机模型、参数与知识内容用于交互演示和教学示意，不作为工程设计依据。
